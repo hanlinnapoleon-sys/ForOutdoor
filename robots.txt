@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /css/
+Sitemap: https://your-username.github.io/forOutdoor/sitemap.xml
