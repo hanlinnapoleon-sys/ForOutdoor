@@ -131,6 +131,39 @@ article.post .body svg { max-width: 100%; height: auto; }
 .gear-cols .gear-box { background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px 18px; }
 .gear-cols .gear-box h4 { font-size: 1rem; margin-bottom: 8px; color: #0f2942; }
 
+/* 装备系统页 */
+.eq-group { background: rgba(255,255,255,0.85); border: 1px solid #e5e7eb; border-radius: 10px; padding: 22px 26px; margin: 22px 0; }
+.eq-group h2 { font-size: 1.3rem; color: #0f2942; margin-bottom: 4px; border-left: 4px solid #2d6e3e; padding-left: 10px; }
+.eq-group .eq-count { font-size: 0.82rem; color: #64748b; font-weight: 400; }
+.eq-group .eq-desc { color: #64748b; font-size: 0.9rem; margin: 6px 0 14px; }
+.eq-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.eq-list li {
+  background: #f0f6f2; color: #1f3d2a; border: 1px solid #d4e6da;
+  border-radius: 6px; padding: 5px 12px; font-size: 0.88rem;
+}
+
+/* 路线大全表格页 */
+.rt-controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 20px 0; }
+.rt-controls input {
+  flex: 1; min-width: 220px; padding: 9px 14px; font-size: 0.95rem;
+  border: 1px solid #cbd5e1; border-radius: 8px;
+}
+.rt-controls input:focus { outline: none; border-color: #2d6e3e; }
+.rt-controls select {
+  padding: 9px 12px; font-size: 0.95rem; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff;
+}
+.rt-count { font-size: 0.88rem; color: #64748b; }
+.rt-table-wrap { overflow-x: auto; background: rgba(255,255,255,0.9); border-radius: 10px; border: 1px solid #e5e7eb; }
+.rt-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+.rt-table thead th {
+  background: #2d6e3e; color: #fff; padding: 11px 14px; text-align: left;
+  position: sticky; top: 64px; font-weight: 600;
+}
+.rt-table tbody td { padding: 9px 14px; border-bottom: 1px solid #eef2f5; }
+.rt-table tbody tr:nth-child(even) { background: #f8faf9; }
+.rt-table tbody tr:hover { background: #eef6f0; }
+.rt-table tbody td:first-child { font-weight: 500; color: #0f2942; }
+
 /* Footer */
 .site-footer {
   border-top: 1px solid #e5e7eb; padding: 30px 0; margin-top: 60px; background: rgba(248, 250, 251, 0.9);

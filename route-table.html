@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>徒步路线大全 - ForOutdoor</title>
+<meta name="description" content="ForOutdoor 是一个专注户外装备评测、户外运动入门指南、徒步登山滑雪露营装备选购建议的内容站点。内容覆盖冲锋衣、帐篷、睡袋、登山鞋、滑雪装备等品类。">
+<meta name="keywords" content="户外装备,冲锋衣,帐篷,登山鞋,滑雪装备,徒步装备,露营装备,户外评测">
+<meta name="author" content="ForOutdoor 编辑部">
+<link rel="canonical" href="https://your-username.github.io/forOutdoor/route-table.html">
+<meta property="og:title" content="徒步路线大全 - ForOutdoor">
+<meta property="og:description" content="ForOutdoor 是一个专注户外装备评测、户外运动入门指南、徒步登山滑雪露营装备选购建议的内容站点。内容覆盖冲锋衣、帐篷、睡袋、登山鞋、滑雪装备等品类。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://your-username.github.io/forOutdoor">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛰</text></svg>">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">⛰ ForOutdoor</a>
+    <nav class="main-nav">
+      <a href="index.html">首页</a>
+      <a href="categories/hiking.html">徒步</a>
+      <a href="categories/camping.html">露营</a>
+      <a href="categories/ski.html">滑雪</a>
+      <a href="categories/apparel.html">户外服装</a>
+      <a href="equipment.html">装备清单</a>
+      <a href="routes.html">徒步路线</a>
+      <a href="route-table.html">路线大全</a>
+      <a href="about.html">关于</a>
+      <a href="contact.html">联系</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+
+<div class="hero">
+  <h1>徒步路线大全</h1>
+  <p>共收录 352 条徒步路线（国内 191 条 / 国际 161 条）。数据为路线基础信息汇总，可用关键词搜索路线名或地区、按类型筛选。其中部分经典路线已有量化难度评分与四季装备清单的详细页，见<a href="routes.html" style="color:#2d6e3e;">徒步路线</a>栏目。</p>
+</div>
+
+<div class="rt-controls">
+  <input type="text" id="rtSearch" placeholder="搜索路线名 / 地区，如：贡嘎、新疆、Camino" oninput="rtFilter()">
+  <select id="rtKind" onchange="rtFilter()">
+    <option value="">全部（352）</option>
+    <option value="cn">国内（191）</option>
+    <option value="intl">国际（161）</option>
+  </select>
+  <span id="rtCount" class="rt-count"></span>
+</div>
+
+<div class="rt-table-wrap">
+<table class="rt-table" id="rtTable">
+<thead><tr><th>路线名称</th><th>长度 (km)</th><th>所在地</th><th>预计天数</th><th>类型</th></tr></thead>
+<tbody>
+<tr data-kind="cn" data-text="狼塔C线新疆"><td>狼塔C线</td><td>130-150</td><td>新疆</td><td>7-9</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="狼塔C+V线新疆"><td>狼塔C+V线</td><td>180-200</td><td>新疆</td><td>11-14</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="夏特古道新疆"><td>夏特古道</td><td>120</td><td>新疆</td><td>5-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="乌孙古道新疆"><td>乌孙古道</td><td>130</td><td>新疆</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="巴丹吉林沙漠西东穿越内蒙古"><td>巴丹吉林沙漠西东穿越</td><td>150+</td><td>内蒙古</td><td>9-10</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="墨脱穿越西藏"><td>墨脱穿越</td><td>94</td><td>西藏</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="阿尼玛卿转山青海"><td>阿尼玛卿转山</td><td>130</td><td>青海</td><td>7-8</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="贡嘎环线/穿越四川"><td>贡嘎环线/穿越</td><td>60-100</td><td>四川</td><td>5-8</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="亚丁大转山四川"><td>亚丁大转山</td><td>50-70</td><td>四川</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="年保玉则环线/穿越青海"><td>年保玉则环线/穿越</td><td>65</td><td>青海</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="鳌太穿越陕西"><td>鳌太穿越</td><td>120</td><td>陕西</td><td>7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="莫斯卡穿越四川"><td>莫斯卡穿越</td><td>82-105</td><td>四川</td><td>4-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="大相岭古道四川"><td>大相岭古道</td><td>50+</td><td>四川</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="博格达五峰连穿新疆"><td>博格达五峰连穿</td><td>65+</td><td>新疆</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="雨崩神瀑/梅里内转云南"><td>雨崩神瀑/梅里内转</td><td>50+</td><td>云南</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="四姑娘山长穿/龙眼四川"><td>四姑娘山长穿/龙眼</td><td>40+</td><td>四川</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="东梁南梁穿越陕西"><td>东梁南梁穿越</td><td>40+</td><td>陕西</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="武功山全穿江西"><td>武功山全穿</td><td>40+</td><td>江西</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="南太行穿越河南/山西"><td>南太行穿越</td><td>50+</td><td>河南/山西</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="京西古道长线北京"><td>京西古道长线</td><td>40+</td><td>北京</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="海坨山穿越北京"><td>海坨山穿越</td><td>40+</td><td>北京</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="车师古道新疆"><td>车师古道</td><td>45</td><td>新疆</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="喀纳斯东西线穿越新疆"><td>喀纳斯东西线穿越</td><td>92</td><td>新疆</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="巴松措转湖/新措徒步西藏"><td>巴松措转湖/新措徒步</td><td>35+</td><td>西藏</td><td>2-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="库布齐沙漠西线穿越内蒙古"><td>库布齐沙漠西线穿越</td><td>45</td><td>内蒙古</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="洛克线 (亚丁延伸)四川"><td>洛克线 (亚丁延伸)</td><td>50+</td><td>四川</td><td>5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="箭扣长城野长城延长北京"><td>箭扣长城野长城延长</td><td>40+</td><td>北京</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="冈仁波齐转山西藏"><td>冈仁波齐转山</td><td>52</td><td>西藏</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="腾格里沙漠五湖穿越内蒙古/宁夏"><td>腾格里沙漠五湖穿越</td><td>52</td><td>内蒙古/宁夏</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="念青唐古拉山东脉穿越西藏"><td>念青唐古拉山东脉穿越</td><td>157</td><td>西藏</td><td>12</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="长坪沟-毕棚沟穿越四川"><td>长坪沟-毕棚沟穿越</td><td>40+</td><td>四川</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="虎跳峡穿越云南"><td>虎跳峡穿越</td><td>36-50</td><td>云南</td><td>2-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="喀纳斯东西线/禾木-黑湖-喀纳斯新疆"><td>喀纳斯东西线/禾木-黑湖-喀纳斯</td><td>65-92</td><td>新疆</td><td>4-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="云台古道河南"><td>云台古道</td><td>40+</td><td>河南</td><td>3-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="宜昌大老岭穿越湖北"><td>宜昌大老岭穿越</td><td>50+</td><td>湖北</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="神农架老君山穿越湖北"><td>神农架老君山穿越</td><td>40+</td><td>湖北</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="党岭三湖/龙普-党岭-卡尔杂四川"><td>党岭三湖/龙普-党岭-卡尔杂</td><td>50</td><td>四川</td><td>3-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="大渡河大峡谷四川"><td>大渡河大峡谷</td><td>50+</td><td>四川</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="念青唐古拉山娘蒲-忠玉西藏"><td>念青唐古拉山娘蒲-忠玉</td><td>157</td><td>西藏</td><td>12</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="夏特古道（变体）新疆"><td>夏特古道（变体）</td><td>120</td><td>新疆</td><td>5-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="乌孙古道（包扎墩）新疆/阿克苏"><td>乌孙古道（包扎墩）</td><td>130</td><td>新疆/阿克苏</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="莫斯卡穿越（丹巴-金川）四川"><td>莫斯卡穿越（丹巴-金川）</td><td>82-105</td><td>四川</td><td>4-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="武功山全穿/九龙山-明月山江西"><td>武功山全穿/九龙山-明月山</td><td>40+</td><td>江西</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="京西古道长线/玉河古道北京"><td>京西古道长线/玉河古道</td><td>40+</td><td>北京</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="巴松措-新措徒步延伸西藏"><td>巴松措-新措徒步延伸</td><td>35+</td><td>西藏</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="库布齐沙漠西线内蒙古"><td>库布齐沙漠西线</td><td>45</td><td>内蒙古</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="鳌太穿越（东梁-南梁）陕西"><td>鳌太穿越（东梁-南梁）</td><td>120</td><td>陕西</td><td>7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="博格达峰环线/五峰连穿新疆"><td>博格达峰环线/五峰连穿</td><td>65+</td><td>新疆</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="车师古道延长版新疆"><td>车师古道延长版</td><td>50+</td><td>新疆</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="喀纳斯黑湖-千湖群新疆"><td>喀纳斯黑湖-千湖群</td><td>50+</td><td>新疆</td><td>4-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="虎跳峡-中虎跳-下虎跳全穿云南"><td>虎跳峡-中虎跳-下虎跳全穿</td><td>40+</td><td>云南</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="长坪沟-毕棚沟反穿四川"><td>长坪沟-毕棚沟反穿</td><td>40+</td><td>四川</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="大五朝台/贡嘎相关四川"><td>大五朝台/贡嘎相关</td><td>50+</td><td>四川</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="神农架天生桥-老君山湖北"><td>神农架天生桥-老君山</td><td>40+</td><td>湖北</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="宜昌大老岭-黄家河湖北"><td>宜昌大老岭-黄家河</td><td>50+</td><td>湖北</td><td>4-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="金鸡谷-未知峰延伸四川"><td>金鸡谷-未知峰延伸</td><td>40+</td><td>四川</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="庞潭古道/芦潭古道延长北京"><td>庞潭古道/芦潭古道延长</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="西山大道北道全线北京"><td>西山大道北道全线</td><td>40+</td><td>北京</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="九龙山大U号穿越北京"><td>九龙山大U号穿越</td><td>29-40+</td><td>北京</td><td>2-3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="潭柘寺-戒台寺古道北京"><td>潭柘寺-戒台寺古道</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="莫斯卡-阿科里沟-情人海四川"><td>莫斯卡-阿科里沟-情人海</td><td>82+</td><td>四川</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="年保玉则正穿/上下文措青海"><td>年保玉则正穿/上下文措</td><td>65</td><td>青海</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="巴丹吉林沙漠西东（变体）内蒙古"><td>巴丹吉林沙漠西东（变体）</td><td>150+</td><td>内蒙古</td><td>9-10</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="狼塔C线变体/支线新疆"><td>狼塔C线变体/支线</td><td>130+</td><td>新疆</td><td>7-9</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="夏特古道冰川段新疆"><td>夏特古道冰川段</td><td>120</td><td>新疆</td><td>5-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="乌孙古道阿克布拉克达坂新疆"><td>乌孙古道阿克布拉克达坂</td><td>130</td><td>新疆</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="车师古道十景全线新疆"><td>车师古道十景全线</td><td>45</td><td>新疆</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="念青唐古拉扎拉-罗琼拉西藏"><td>念青唐古拉扎拉-罗琼拉</td><td>157</td><td>西藏</td><td>12</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="虎跳峡28道拐-滑石板云南"><td>虎跳峡28道拐-滑石板</td><td>36+</td><td>云南</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="喀纳斯贾登峪-禾木-黑湖新疆"><td>喀纳斯贾登峪-禾木-黑湖</td><td>65</td><td>新疆</td><td>4-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="武功山发云界-羊狮幕江西"><td>武功山发云界-羊狮幕</td><td>40+</td><td>江西</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="京西古道圈门-潭柘寺北京"><td>京西古道圈门-潭柘寺</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="海坨山-啤酒溪北京"><td>海坨山-啤酒溪</td><td>25-40</td><td>北京</td><td>2-3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="云台古道太行河南"><td>云台古道太行</td><td>40+</td><td>河南</td><td>3-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="宜昌大老岭S312-建阳坪湖北"><td>宜昌大老岭S312-建阳坪</td><td>50+</td><td>湖北</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="神农架老君寨-刺剑垭湖北"><td>神农架老君寨-刺剑垭</td><td>40+</td><td>湖北</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="党岭葫芦海-甲依拉错四川"><td>党岭葫芦海-甲依拉错</td><td>50</td><td>四川</td><td>3-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="大渡河大峡谷核心四川"><td>大渡河大峡谷核心</td><td>50+</td><td>四川</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="长坪沟喇嘛寺-叉子沟-垭口四川"><td>长坪沟喇嘛寺-叉子沟-垭口</td><td>40+</td><td>四川</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="毕棚沟盘羊湖-上海子四川"><td>毕棚沟盘羊湖-上海子</td><td>40+</td><td>四川</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="莫斯卡热水塘-金龙山四川"><td>莫斯卡热水塘-金龙山</td><td>82-105</td><td>四川</td><td>4-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="大相岭茶马古道石碑-垭口四川"><td>大相岭茶马古道石碑-垭口</td><td>50+</td><td>四川</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="武功山金顶-绝望坡-沈家大院江西"><td>武功山金顶-绝望坡-沈家大院</td><td>40+</td><td>江西</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="箭扣-天梯-九眼楼全穿北京"><td>箭扣-天梯-九眼楼全穿</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="南太行黑龙潭-王相岩河南"><td>南太行黑龙潭-王相岩</td><td>50+</td><td>河南</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="腾格里沙漠湖群穿越内蒙古"><td>腾格里沙漠湖群穿越</td><td>52</td><td>内蒙古</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="库布齐西线延伸内蒙古"><td>库布齐西线延伸</td><td>45+</td><td>内蒙古</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="巴松措结巴村-新措-桑通牧场西藏"><td>巴松措结巴村-新措-桑通牧场</td><td>35+</td><td>西藏</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="雨崩-神瀑-梅里雪山内转云南"><td>雨崩-神瀑-梅里雪山内转</td><td>50+</td><td>云南</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="冈仁波齐转山全环西藏"><td>冈仁波齐转山全环</td><td>52</td><td>西藏</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="博格达峰连穿新疆"><td>博格达峰连穿</td><td>65+</td><td>新疆</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="车师古道琼达坂-六道桥新疆"><td>车师古道琼达坂-六道桥</td><td>45</td><td>新疆</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="喀纳斯小黑湖-达坂新疆"><td>喀纳斯小黑湖-达坂</td><td>50+</td><td>新疆</td><td>4-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="虎跳峡桥头-大具全线云南"><td>虎跳峡桥头-大具全线</td><td>36+</td><td>云南</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="长坪沟-毕棚沟垭口翻越四川"><td>长坪沟-毕棚沟垭口翻越</td><td>40+</td><td>四川</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="四姑娘山双桥沟延伸四川"><td>四姑娘山双桥沟延伸</td><td>40+</td><td>四川</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="神农架天生桥-城墙岩湖北"><td>神农架天生桥-城墙岩</td><td>40+</td><td>湖北</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="金鸡谷仙侣牧云-未知峰四川"><td>金鸡谷仙侣牧云-未知峰</td><td>40+</td><td>四川</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="庞潭古道潭柘寺-大灰厂北京"><td>庞潭古道潭柘寺-大灰厂</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="西山大道模式口-王平口北京"><td>西山大道模式口-王平口</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="九龙山-定都峰-葡萄嘴北京"><td>九龙山-定都峰-葡萄嘴</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="莫斯卡-牛肝马肺海四川"><td>莫斯卡-牛肝马肺海</td><td>82+</td><td>四川</td><td>5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="年保玉则仙女湖-德莫措青海"><td>年保玉则仙女湖-德莫措</td><td>65</td><td>青海</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="巴丹吉林古日乃-阿右旗内蒙古"><td>巴丹吉林古日乃-阿右旗</td><td>150+</td><td>内蒙古</td><td>9-10</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="狼塔V线新疆"><td>狼塔V线</td><td>150+</td><td>新疆</td><td>8-10</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="孟克德古道新疆"><td>孟克德古道</td><td>70</td><td>新疆</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="四姑娘山长坪沟-毕棚沟穿越四川"><td>四姑娘山长坪沟-毕棚沟穿越</td><td>40+</td><td>四川</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="雨崩神瀑梅里内转完整版云南"><td>雨崩神瀑梅里内转完整版</td><td>50+</td><td>云南</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="鳌太线完整穿越陕西"><td>鳌太线完整穿越</td><td>170+</td><td>陕西</td><td>7-9</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="喀纳斯禾木黑湖千湖群连穿新疆"><td>喀纳斯禾木黑湖千湖群连穿</td><td>65-92</td><td>新疆</td><td>4-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="虎跳峡全线28道拐滑石板云南"><td>虎跳峡全线28道拐滑石板</td><td>40+</td><td>云南</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="神农架老君山天生桥穿越湖北"><td>神农架老君山天生桥穿越</td><td>40+</td><td>湖北</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="宜昌大老岭黄家河穿越湖北"><td>宜昌大老岭黄家河穿越</td><td>50+</td><td>湖北</td><td>4-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="云台古道太行段河南"><td>云台古道太行段</td><td>40+</td><td>河南</td><td>3-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="党岭三湖葫芦海甲依拉错四川"><td>党岭三湖葫芦海甲依拉错</td><td>50</td><td>四川</td><td>3-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="大渡河大峡谷核心穿越四川"><td>大渡河大峡谷核心穿越</td><td>50+</td><td>四川</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="金鸡谷未知峰延伸四川"><td>金鸡谷未知峰延伸</td><td>40+</td><td>四川</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="庞潭古道芦潭古道全线北京"><td>庞潭古道芦潭古道全线</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="西山大道北道模式口王平口北京"><td>西山大道北道模式口王平口</td><td>40+</td><td>北京</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="九龙山大U号定都峰穿越北京"><td>九龙山大U号定都峰穿越</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="潭柘寺戒台寺古道延长北京"><td>潭柘寺戒台寺古道延长</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="南太行黑龙潭王相岩全穿河南/山西"><td>南太行黑龙潭王相岩全穿</td><td>50+</td><td>河南/山西</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="腾格里沙漠湖群完整穿越内蒙古/宁夏"><td>腾格里沙漠湖群完整穿越</td><td>52</td><td>内蒙古/宁夏</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="库布齐沙漠西线延伸内蒙古"><td>库布齐沙漠西线延伸</td><td>45+</td><td>内蒙古</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="巴松措结巴村新措桑通牧场西藏"><td>巴松措结巴村新措桑通牧场</td><td>35+</td><td>西藏</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="念青唐古拉扎拉罗琼拉穿越西藏"><td>念青唐古拉扎拉罗琼拉穿越</td><td>157</td><td>西藏</td><td>12</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="车师古道琼达坂六道桥新疆"><td>车师古道琼达坂六道桥</td><td>45</td><td>新疆</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="喀纳斯小黑湖达坂连线新疆"><td>喀纳斯小黑湖达坂连线</td><td>50+</td><td>新疆</td><td>4-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="虎跳峡桥头大具全线云南"><td>虎跳峡桥头大具全线</td><td>36+</td><td>云南</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="长坪沟喇嘛寺叉子沟垭口四川"><td>长坪沟喇嘛寺叉子沟垭口</td><td>40+</td><td>四川</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="毕棚沟盘羊湖上海子四川"><td>毕棚沟盘羊湖上海子</td><td>40+</td><td>四川</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="莫斯卡热水塘金龙山四川"><td>莫斯卡热水塘金龙山</td><td>82-105</td><td>四川</td><td>4-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="大相岭茶马古道石碑垭口四川"><td>大相岭茶马古道石碑垭口</td><td>50+</td><td>四川</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="武功山金顶绝望坡沈家大院江西"><td>武功山金顶绝望坡沈家大院</td><td>40+</td><td>江西</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="箭扣天梯九眼楼野长城全穿北京"><td>箭扣天梯九眼楼野长城全穿</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="巴丹吉林古日乃阿右旗变体内蒙古"><td>巴丹吉林古日乃阿右旗变体</td><td>150+</td><td>内蒙古</td><td>9-10</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="夏特古道冰川段延伸新疆"><td>夏特古道冰川段延伸</td><td>120</td><td>新疆</td><td>5-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="念青唐古拉山东脉完整西藏"><td>念青唐古拉山东脉完整</td><td>157</td><td>西藏</td><td>12</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="虎跳峡中虎跳下虎跳全穿云南"><td>虎跳峡中虎跳下虎跳全穿</td><td>40+</td><td>云南</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="长坪沟毕棚沟反穿四川"><td>长坪沟毕棚沟反穿</td><td>40+</td><td>四川</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="大五朝台贡嘎相关延伸四川"><td>大五朝台贡嘎相关延伸</td><td>50+</td><td>四川</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="神农架天生桥城墙岩湖北"><td>神农架天生桥城墙岩</td><td>40+</td><td>湖北</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="金鸡谷仙侣牧云未知峰四川"><td>金鸡谷仙侣牧云未知峰</td><td>40+</td><td>四川</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="庞潭古道潭柘寺大灰厂北京"><td>庞潭古道潭柘寺大灰厂</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="西山大道模式口王平口全线北京"><td>西山大道模式口王平口全线</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="九龙山葡萄嘴穿越北京"><td>九龙山葡萄嘴穿越</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="莫斯卡牛肝马肺海四川"><td>莫斯卡牛肝马肺海</td><td>82+</td><td>四川</td><td>5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="年保玉则仙女湖德莫措青海"><td>年保玉则仙女湖德莫措</td><td>65</td><td>青海</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="巴丹吉林西东核心无水区内蒙古"><td>巴丹吉林西东核心无水区</td><td>150+</td><td>内蒙古</td><td>9-10</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="狼塔C线支线变体新疆"><td>狼塔C线支线变体</td><td>130+</td><td>新疆</td><td>7-9</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="喀纳斯贾登峪禾木黑湖新疆"><td>喀纳斯贾登峪禾木黑湖</td><td>65</td><td>新疆</td><td>4-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="武功山发云界羊狮幕江西"><td>武功山发云界羊狮幕</td><td>40+</td><td>江西</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="京西古道圈门潭柘寺北京"><td>京西古道圈门潭柘寺</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="海坨山啤酒溪北京/河北"><td>海坨山啤酒溪</td><td>25-40</td><td>北京/河北</td><td>2-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="宜昌大老岭S312建阳坪湖北"><td>宜昌大老岭S312建阳坪</td><td>50+</td><td>湖北</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="神农架老君寨刺剑垭湖北"><td>神农架老君寨刺剑垭</td><td>40+</td><td>湖北</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="党岭葫芦海甲依拉错四川"><td>党岭葫芦海甲依拉错</td><td>50</td><td>四川</td><td>3-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="大渡河大峡谷核心段四川"><td>大渡河大峡谷核心段</td><td>50+</td><td>四川</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="长坪沟叉子沟垭口翻越四川"><td>长坪沟叉子沟垭口翻越</td><td>40+</td><td>四川</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="莫斯卡阿科里沟情人海四川"><td>莫斯卡阿科里沟情人海</td><td>82+</td><td>四川</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="年保玉则正穿上下文措青海"><td>年保玉则正穿上下文措</td><td>65</td><td>青海</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="夏特古道包扎墩变体新疆"><td>夏特古道包扎墩变体</td><td>120</td><td>新疆</td><td>5-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="乌孙古道包扎墩延伸新疆"><td>乌孙古道包扎墩延伸</td><td>130</td><td>新疆</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="喀纳斯黑湖千湖群新疆"><td>喀纳斯黑湖千湖群</td><td>50+</td><td>新疆</td><td>4-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="虎跳峡桥头大具云南"><td>虎跳峡桥头大具</td><td>36+</td><td>云南</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="长坪沟毕棚沟垭口四川"><td>长坪沟毕棚沟垭口</td><td>40+</td><td>四川</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="金鸡谷未知峰内探四川"><td>金鸡谷未知峰内探</td><td>40+</td><td>四川</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="庞潭古道大灰厂北京"><td>庞潭古道大灰厂</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="西山大道王平口北京"><td>西山大道王平口</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="九龙山定都峰北京"><td>九龙山定都峰</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="莫斯卡金龙山延伸四川"><td>莫斯卡金龙山延伸</td><td>82+</td><td>四川</td><td>5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="年保玉则德莫措青海"><td>年保玉则德莫措</td><td>65</td><td>青海</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="巴丹吉林神庙青海子内蒙古"><td>巴丹吉林神庙青海子</td><td>150+</td><td>内蒙古</td><td>9-10</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="狼塔V线连穿新疆"><td>狼塔V线连穿</td><td>150+</td><td>新疆</td><td>8-10</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="孟克德古道天湖新疆"><td>孟克德古道天湖</td><td>70</td><td>新疆</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="四姑娘山毕棚沟反穿四川"><td>四姑娘山毕棚沟反穿</td><td>40+</td><td>四川</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="雨崩梅里雪山神瀑冰湖云南"><td>雨崩梅里雪山神瀑冰湖</td><td>50+</td><td>云南</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="鳌太线主脊17峰陕西"><td>鳌太线主脊17峰</td><td>170+</td><td>陕西</td><td>7-9</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="喀纳斯东西线完整新疆"><td>喀纳斯东西线完整</td><td>92</td><td>新疆</td><td>5-7</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="虎跳峡全穿滑石板云南"><td>虎跳峡全穿滑石板</td><td>40+</td><td>云南</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="神农架老君山完整湖北"><td>神农架老君山完整</td><td>40+</td><td>湖北</td><td>4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="宜昌大老岭全线湖北"><td>宜昌大老岭全线</td><td>50+</td><td>湖北</td><td>4-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="云台古道延伸河南"><td>云台古道延伸</td><td>40+</td><td>河南</td><td>3-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="党岭龙普卡尔杂四川"><td>党岭龙普卡尔杂</td><td>50</td><td>四川</td><td>3-5</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="大渡河峡谷多日版四川"><td>大渡河峡谷多日版</td><td>50+</td><td>四川</td><td>4-6</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="金鸡谷索桥未知峰四川"><td>金鸡谷索桥未知峰</td><td>40+</td><td>四川</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="京西古道玉河大道北京"><td>京西古道玉河大道</td><td>40+</td><td>北京</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="箭扣野长城重装版北京"><td>箭扣野长城重装版</td><td>40+</td><td>北京</td><td>3</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="海坨山穿越延长北京"><td>海坨山穿越延长</td><td>40+</td><td>北京</td><td>3-4</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="阿玛直米南北线—"><td>阿玛直米南北线</td><td>—</td><td>—</td><td>—</td><td>国内</td></tr>
+<tr data-kind="cn" data-text="阿玛直米东西线—"><td>阿玛直米东西线</td><td>—</td><td>—</td><td>—</td><td>国内</td></tr>
+<tr data-kind="intl" data-text="Tour du Mont Blanc (TMB环勃朗峰)法国/瑞士/意大利"><td>Tour du Mont Blanc (TMB环勃朗峰)</td><td>170</td><td>法国/瑞士/意大利</td><td>10-12</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Annapurna Circuit (安娜普尔纳环线)尼泊尔"><td>Annapurna Circuit (安娜普尔纳环线)</td><td>160-230</td><td>尼泊尔</td><td>12-21</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Everest Base Camp Trek (珠峰大本营)尼泊尔"><td>Everest Base Camp Trek (珠峰大本营)</td><td>130</td><td>尼泊尔</td><td>12-14</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Inca Trail to Machu Picchu (印加古道)秘鲁"><td>Inca Trail to Machu Picchu (印加古道)</td><td>42</td><td>秘鲁</td><td>4</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Torres del Paine W Trek (百内国家公园W线)智利"><td>Torres del Paine W Trek (百内国家公园W线)</td><td>80</td><td>智利</td><td>4-5</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="GR20 (科西嘉岛GR20)法国 (科西嘉)"><td>GR20 (科西嘉岛GR20)</td><td>180</td><td>法国 (科西嘉)</td><td>15</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="West Highland Way (西高地之路)英国 (苏格兰)"><td>West Highland Way (西高地之路)</td><td>154</td><td>英国 (苏格兰)</td><td>7-8</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Overland Track (塔斯马尼亚Overland)澳大利亚 (塔斯马尼亚)"><td>Overland Track (塔斯马尼亚Overland)</td><td>65-82</td><td>澳大利亚 (塔斯马尼亚)</td><td>6</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Kilimanjaro Trek (乞力马扎罗)坦桑尼亚"><td>Kilimanjaro Trek (乞力马扎罗)</td><td>40-70</td><td>坦桑尼亚</td><td>5-9</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Camino de Santiago (圣地亚哥朝圣之路)西班牙"><td>Camino de Santiago (圣地亚哥朝圣之路)</td><td>800+</td><td>西班牙</td><td>30-40</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Pacific Crest Trail (PCT太平洋山脊步道)美国"><td>Pacific Crest Trail (PCT太平洋山脊步道)</td><td>4286</td><td>美国</td><td>120-180</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Appalachian Trail (AT阿帕拉契亚小径)美国"><td>Appalachian Trail (AT阿帕拉契亚小径)</td><td>3500</td><td>美国</td><td>150-210</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Continental Divide Trail (CDT大陆分水岭)美国"><td>Continental Divide Trail (CDT大陆分水岭)</td><td>4873</td><td>美国</td><td>140-200</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Te Araroa Trail (新西兰长径)新西兰"><td>Te Araroa Trail (新西兰长径)</td><td>3000</td><td>新西兰</td><td>80-110</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="South West Coast Path (西南海岸步道)英国"><td>South West Coast Path (西南海岸步道)</td><td>1014</td><td>英国</td><td>40-45</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Lycian Way (利西亚之路)土耳其"><td>Lycian Way (利西亚之路)</td><td>540</td><td>土耳其</td><td>20-30</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Kungsleden (国王小径)瑞典"><td>Kungsleden (国王小径)</td><td>425</td><td>瑞典</td><td>20-30</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Via Dinarica (迪纳里克之路白线段)阿尔巴尼亚-斯洛文尼亚"><td>Via Dinarica (迪纳里克之路白线段)</td><td>1260</td><td>阿尔巴尼亚-斯洛文尼亚</td><td>60+</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="West Coast Trail (西海岸步道)加拿大"><td>West Coast Trail (西海岸步道)</td><td>75</td><td>加拿大</td><td>5-8</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Dana to Petra (达纳到佩特拉)约旦"><td>Dana to Petra (达纳到佩特拉)</td><td>84</td><td>约旦</td><td>4-6</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Lares Trek (拉雷斯古道)秘鲁"><td>Lares Trek (拉雷斯古道)</td><td>50+</td><td>秘鲁</td><td>4-5</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Kumano Kodo (熊野古道)日本"><td>Kumano Kodo (熊野古道)</td><td>40-100</td><td>日本</td><td>3-7</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Milford Track (米尔福德步道)新西兰"><td>Milford Track (米尔福德步道)</td><td>54</td><td>新西兰</td><td>4</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Kepler Track (开普勒步道)新西兰"><td>Kepler Track (开普勒步道)</td><td>60</td><td>新西兰</td><td>3-4</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Haute Route (高路)法国/瑞士"><td>Haute Route (高路)</td><td>200</td><td>法国/瑞士</td><td>14</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="GR5 (日内瓦到尼斯段)瑞士/法国"><td>GR5 (日内瓦到尼斯段)</td><td>约700</td><td>瑞士/法国</td><td>30-45</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Berliner Hohenweg (柏林高路)奥地利"><td>Berliner Hohenweg (柏林高路)</td><td>82</td><td>奥地利</td><td>6</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Mullerthal Trail (穆勒塔尔步道)卢森堡"><td>Mullerthal Trail (穆勒塔尔步道)</td><td>112</td><td>卢森堡</td><td>5-7</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Vancouver Island Trail (温哥华岛步道)加拿大"><td>Vancouver Island Trail (温哥华岛步道)</td><td>800</td><td>加拿大</td><td>60+</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Camino de Costa Rica (哥斯达黎加朝圣之路)哥斯达黎加"><td>Camino de Costa Rica (哥斯达黎加朝圣之路)</td><td>280</td><td>哥斯达黎加</td><td>16</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Fjällräven Classic (部分段)瑞典"><td>Fjällräven Classic (部分段)</td><td>约100</td><td>瑞典</td><td>5-7</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Markha Valley Trek (马尔哈谷)印度 (拉达克)"><td>Markha Valley Trek (马尔哈谷)</td><td>80</td><td>印度 (拉达克)</td><td>6-7</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Nar Phu Valley Trek (纳尔-普谷)尼泊尔"><td>Nar Phu Valley Trek (纳尔-普谷)</td><td>约100+</td><td>尼泊尔</td><td>9-12</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Gokyo Lakes Trek (戈乔湖)尼泊尔"><td>Gokyo Lakes Trek (戈乔湖)</td><td>约80-100</td><td>尼泊尔</td><td>8-10</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Langtang Valley Trek (朗塘谷)尼泊尔"><td>Langtang Valley Trek (朗塘谷)</td><td>约70</td><td>尼泊尔</td><td>7-9</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Salkantay Trek (萨尔坎泰)秘鲁"><td>Salkantay Trek (萨尔坎泰)</td><td>70</td><td>秘鲁</td><td>5</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Jesus Trail (耶稣步道)以色列"><td>Jesus Trail (耶稣步道)</td><td>65</td><td>以色列</td><td>4-5</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Bibbulmun Track (部分段)澳大利亚"><td>Bibbulmun Track (部分段)</td><td>1000+</td><td>澳大利亚</td><td>40-60</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Great Divide Trail (大分水岭步道)加拿大"><td>Great Divide Trail (大分水岭步道)</td><td>1127</td><td>加拿大</td><td>35-70</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Idaho Centennial Trail (爱达荷百年步道)美国"><td>Idaho Centennial Trail (爱达荷百年步道)</td><td>1600</td><td>美国</td><td>40-70</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Colorado Trail (科罗拉多步道)美国"><td>Colorado Trail (科罗拉多步道)</td><td>800</td><td>美国</td><td>30-45</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Arizona Trail (亚利桑那步道)美国"><td>Arizona Trail (亚利桑那步道)</td><td>1300</td><td>美国</td><td>40-60</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Shikoku Pilgrimage (四国遍路)日本"><td>Shikoku Pilgrimage (四国遍路)</td><td>1200</td><td>日本</td><td>40-60</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Drakensberg Traverse (德拉肯斯山穿越)南非"><td>Drakensberg Traverse (德拉肯斯山穿越)</td><td>200+</td><td>南非</td><td>10-14</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Tongariro Northern Circuit (汤加里罗北环)新西兰"><td>Tongariro Northern Circuit (汤加里罗北环)</td><td>43</td><td>新西兰</td><td>3-4</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Laugavegur & Fimmvörðuháls (朗加维格)冰岛"><td>Laugavegur & Fimmvörðuháls (朗加维格)</td><td>55+</td><td>冰岛</td><td>4-6</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Haute Route Pyrenees (比利牛斯高路)法国/西班牙"><td>Haute Route Pyrenees (比利牛斯高路)</td><td>800+</td><td>法国/西班牙</td><td>40+</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Via Alpina (阿尔卑斯之路)欧洲多国"><td>Via Alpina (阿尔卑斯之路)</td><td>5000+</td><td>欧洲多国</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Pieterpad (皮特路径)荷兰"><td>Pieterpad (皮特路径)</td><td>500</td><td>荷兰</td><td>20-25</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Alpe Adria Trail奥地利/意大利/斯洛文尼亚"><td>Alpe Adria Trail</td><td>750</td><td>奥地利/意大利/斯洛文尼亚</td><td>43</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="North Downs Way英国 (英格兰)"><td>North Downs Way</td><td>246</td><td>英国 (英格兰)</td><td>12</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Scottish National Trail英国 (苏格兰)"><td>Scottish National Trail</td><td>864</td><td>英国 (苏格兰)</td><td>40</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Empire State Trail美国 (纽约州)"><td>Empire State Trail</td><td>1200+</td><td>美国 (纽约州)</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Stockholm Archipelago Trail瑞典"><td>Stockholm Archipelago Trail</td><td>270</td><td>瑞典</td><td>10-15</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Jordan Trail约旦"><td>Jordan Trail</td><td>630</td><td>约旦</td><td>23-30</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Via Francigena瑞士/意大利"><td>Via Francigena</td><td>1000+</td><td>瑞士/意大利</td><td>40-60</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Laugavegur Trail + Fimmvörðuháls冰岛"><td>Laugavegur Trail + Fimmvörðuháls</td><td>55+</td><td>冰岛</td><td>4-6</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Alta Via 2 (Dolomites)意大利"><td>Alta Via 2 (Dolomites)</td><td>160</td><td>意大利</td><td>11-14</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Great Himalaya Trail (部分高线)尼泊尔"><td>Great Himalaya Trail (部分高线)</td><td>数百-数千</td><td>尼泊尔</td><td>数周-数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Manaslu Circuit尼泊尔"><td>Manaslu Circuit</td><td>177</td><td>尼泊尔</td><td>14-18</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Wind River High Route美国 (怀俄明)"><td>Wind River High Route</td><td>130-160</td><td>美国 (怀俄明)</td><td>7-18</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="John Muir Trail美国 (加利福尼亚)"><td>John Muir Trail</td><td>340</td><td>美国 (加利福尼亚)</td><td>14-21</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Greater Patagonian Trail (部分)智利/阿根廷"><td>Greater Patagonian Trail (部分)</td><td>数百</td><td>智利/阿根廷</td><td>数周</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Trans Bhutan Trail不丹"><td>Trans Bhutan Trail</td><td>403</td><td>不丹</td><td>7-36</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Rota Vicentina (Fisherman's Trail)葡萄牙"><td>Rota Vicentina (Fisherman's Trail)</td><td>120+</td><td>葡萄牙</td><td>5-10</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Hexatrek法国"><td>Hexatrek</td><td>3034</td><td>法国</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Via Transilvanica罗马尼亚"><td>Via Transilvanica</td><td>1600</td><td>罗马尼亚</td><td>60+</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Camino del Norte西班牙"><td>Camino del Norte</td><td>803</td><td>西班牙</td><td>30-40</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Le Puy Camino法国/西班牙"><td>Le Puy Camino</td><td>727</td><td>法国/西班牙</td><td>25-35</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="GR-92 (Catalan Mediterranean)西班牙 (加泰罗尼亚)"><td>GR-92 (Catalan Mediterranean)</td><td>数百</td><td>西班牙 (加泰罗尼亚)</td><td>8-16</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Mare à Mare Nord法国 (科西嘉)"><td>Mare à Mare Nord</td><td>138</td><td>法国 (科西嘉)</td><td>7-10</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Causeway Coastal Route北爱尔兰"><td>Causeway Coastal Route</td><td>数百</td><td>北爱尔兰</td><td>多日</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Pembrokeshire Coast Path英国 (威尔士)"><td>Pembrokeshire Coast Path</td><td>300+</td><td>英国 (威尔士)</td><td>12-15</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Bohusleden瑞典"><td>Bohusleden</td><td>340</td><td>瑞典</td><td>14-20</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Cape Wrath Trail英国 (苏格兰)"><td>Cape Wrath Trail</td><td>320+</td><td>英国 (苏格兰)</td><td>15-20</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Pacific Northwest Trail美国"><td>Pacific Northwest Trail</td><td>1930</td><td>美国</td><td>60-80</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="East Coast Greenway (部分)美国"><td>East Coast Greenway (部分)</td><td>数百</td><td>美国</td><td>多日</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Hadrian's Wall Path英国"><td>Hadrian's Wall Path</td><td>135</td><td>英国</td><td>6-8</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Wales Coast Path英国 (威尔士)"><td>Wales Coast Path</td><td>1400+</td><td>英国 (威尔士)</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Great Ocean Walk澳大利亚"><td>Great Ocean Walk</td><td>110</td><td>澳大利亚</td><td>8</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Bibbulmun Track (部分)澳大利亚"><td>Bibbulmun Track (部分)</td><td>100+</td><td>澳大利亚</td><td>5-10+</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Drakensberg Grand Traverse南非/莱索托"><td>Drakensberg Grand Traverse</td><td>225+</td><td>南非/莱索托</td><td>10-15</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Simien Mountains Traverse埃塞俄比亚"><td>Simien Mountains Traverse</td><td>100+</td><td>埃塞俄比亚</td><td>7-10</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Toubkal Circuit摩洛哥"><td>Toubkal Circuit</td><td>50-80</td><td>摩洛哥</td><td>5-7</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Fann Mountains Lake Loop塔吉克斯坦"><td>Fann Mountains Lake Loop</td><td>30-50+</td><td>塔吉克斯坦</td><td>3-5</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Huayhuash Circuit秘鲁"><td>Huayhuash Circuit</td><td>100+</td><td>秘鲁</td><td>8-12</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Choquequirao Trek秘鲁"><td>Choquequirao Trek</td><td>60+</td><td>秘鲁</td><td>4-5</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Ausangate Trek秘鲁"><td>Ausangate Trek</td><td>70+</td><td>秘鲁</td><td>5-7</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Snowman Trek不丹"><td>Snowman Trek</td><td>347</td><td>不丹</td><td>24</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Laya Trek不丹"><td>Laya Trek</td><td>150+</td><td>不丹</td><td>10-14</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Transcaucasian Trail (部分)格鲁吉亚/亚美尼亚"><td>Transcaucasian Trail (部分)</td><td>数百</td><td>格鲁吉亚/亚美尼亚</td><td>多日-数周</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Lebanon Mountain Trail黎巴嫩"><td>Lebanon Mountain Trail</td><td>440</td><td>黎巴嫩</td><td>26</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Nakasendo Way日本"><td>Nakasendo Way</td><td>500+</td><td>日本</td><td>20+</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="St. Olav's Way挪威"><td>St. Olav's Way</td><td>640+</td><td>挪威</td><td>25-30</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Fisherman's Trail (Rota Vicentina)葡萄牙"><td>Fisherman's Trail (Rota Vicentina)</td><td>75+</td><td>葡萄牙</td><td>4-7</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Cotswold Way英国"><td>Cotswold Way</td><td>164</td><td>英国</td><td>8-10</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="North Country National Scenic Trail美国"><td>North Country National Scenic Trail</td><td>6800</td><td>美国</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Florida Trail美国"><td>Florida Trail</td><td>1609</td><td>美国</td><td>40-60</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Ice Age Trail美国"><td>Ice Age Trail</td><td>1609</td><td>美国</td><td>40-60</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Superior Hiking Trail美国"><td>Superior Hiking Trail</td><td>475</td><td>美国</td><td>20-30</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Long Trail Vermont美国"><td>Long Trail Vermont</td><td>438</td><td>美国</td><td>20-25</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Ozark Highlands Trail美国"><td>Ozark Highlands Trail</td><td>350</td><td>美国</td><td>15-20</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Finger Lakes Trail美国"><td>Finger Lakes Trail</td><td>933</td><td>美国</td><td>30-40</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Mountains to Sea Trail美国"><td>Mountains to Sea Trail</td><td>1890</td><td>美国</td><td>60+</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Buckeye Trail美国"><td>Buckeye Trail</td><td>2320</td><td>美国</td><td>80+</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Sentiero Italia意大利"><td>Sentiero Italia</td><td>3800+</td><td>意大利</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Croatian Long Distance Trail克罗地亚"><td>Croatian Long Distance Trail</td><td>2145</td><td>克罗地亚</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="GR34 Brittany Coast Path法国"><td>GR34 Brittany Coast Path</td><td>1800+</td><td>法国</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="GR131 Tenerife Island Crossing西班牙"><td>GR131 Tenerife Island Crossing</td><td>185</td><td>西班牙</td><td>8-10</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="GR221 Mallorca Dry Stone Route西班牙"><td>GR221 Mallorca Dry Stone Route</td><td>116+</td><td>西班牙</td><td>5-7</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="E1 European Long Distance Path欧洲多国"><td>E1 European Long Distance Path</td><td>7000</td><td>欧洲多国</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="E2 European Long Distance Path欧洲多国"><td>E2 European Long Distance Path</td><td>4850</td><td>欧洲多国</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="E8 European Long Distance Path欧洲多国"><td>E8 European Long Distance Path</td><td>4700</td><td>欧洲多国</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="E9 European Long Distance Path欧洲多国"><td>E9 European Long Distance Path</td><td>5000+</td><td>欧洲多国</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="E11 European Long Distance Path欧洲多国"><td>E11 European Long Distance Path</td><td>2000+</td><td>欧洲多国</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Kokoda Track巴布亚新几内亚"><td>Kokoda Track</td><td>96</td><td>巴布亚新几内亚</td><td>6-10</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Munda Biddi Trail澳大利亚"><td>Munda Biddi Trail</td><td>1000+</td><td>澳大利亚</td><td>40-60</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Accursed Mountains Traverse阿尔巴尼亚"><td>Accursed Mountains Traverse</td><td>100+</td><td>阿尔巴尼亚</td><td>7-10</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Alpine Traverse Munich-Venice德国/奥地利/意大利"><td>Alpine Traverse Munich-Venice</td><td>365</td><td>德国/奥地利/意大利</td><td>20</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Dolomites Alta Via 1意大利"><td>Dolomites Alta Via 1</td><td>150</td><td>意大利</td><td>10-12</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="North-to-South Iceland Traverse冰岛"><td>North-to-South Iceland Traverse</td><td>500+</td><td>冰岛</td><td>20-30</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Dajia Mazu Pilgrimage Route台湾"><td>Dajia Mazu Pilgrimage Route</td><td>400+</td><td>台湾</td><td>15-20</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Ireland Coast to Coast Walk爱尔兰"><td>Ireland Coast to Coast Walk</td><td>650</td><td>爱尔兰</td><td>25-30</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="GR5A Dutch Variant荷兰/比利时"><td>GR5A Dutch Variant</td><td>300+</td><td>荷兰/比利时</td><td>12-15</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="GR12 Amsterdam-Paris荷兰/比利时/法国"><td>GR12 Amsterdam-Paris</td><td>800+</td><td>荷兰/比利时/法国</td><td>30-40</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Va Sentiero Italy Full Traverse意大利"><td>Va Sentiero Italy Full Traverse</td><td>7000+</td><td>意大利</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Hayduke Trail美国"><td>Hayduke Trail</td><td>1300</td><td>美国</td><td>40-60</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Tahoe Rim Trail美国"><td>Tahoe Rim Trail</td><td>265</td><td>美国</td><td>10-14</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Wonderland Trail美国"><td>Wonderland Trail</td><td>153</td><td>美国</td><td>10-14</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Great Eastern Trail美国"><td>Great Eastern Trail</td><td>2897</td><td>美国</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="GR132 La Gomera Circumnavigation西班牙"><td>GR132 La Gomera Circumnavigation</td><td>116+</td><td>西班牙</td><td>5-8</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="GR738 Haute Traversée Belledonne法国"><td>GR738 Haute Traversée Belledonne</td><td>200+</td><td>法国</td><td>10-12</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="GR69 La Routo法国"><td>GR69 La Routo</td><td>150+</td><td>法国</td><td>7-10</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="GR800 Vallée de la Somme法国"><td>GR800 Vallée de la Somme</td><td>120+</td><td>法国</td><td>6-8</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Trans Canada Trail (段落多日)加拿大"><td>Trans Canada Trail (段落多日)</td><td>24000+</td><td>加拿大</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Great Trail Canada full加拿大"><td>Great Trail Canada full</td><td>24000+</td><td>加拿大</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Huella Andina Trail阿根廷"><td>Huella Andina Trail</td><td>2500+</td><td>阿根廷</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Ruta de los Parques Patagonia智利"><td>Ruta de los Parques Patagonia</td><td>3000+</td><td>智利</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Via Dinarica Green Trail variant巴尔干"><td>Via Dinarica Green Trail variant</td><td>500+</td><td>巴尔干</td><td>20-30</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Lebanese Mountain Trail full黎巴嫩"><td>Lebanese Mountain Trail full</td><td>440</td><td>黎巴嫩</td><td>26</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="St Olav Ways variant Norway挪威"><td>St Olav Ways variant Norway</td><td>640+</td><td>挪威</td><td>25-30</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Shikoku Henro full pilgrimage日本"><td>Shikoku Henro full pilgrimage</td><td>1200</td><td>日本</td><td>40-60</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Allegheny Trail美国 (西弗吉尼亚)"><td>Allegheny Trail</td><td>463</td><td>美国 (西弗吉尼亚)</td><td>20-25</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Benton MacKaye Trail美国 (佐治亚/田纳西/北卡)"><td>Benton MacKaye Trail</td><td>483</td><td>美国 (佐治亚/田纳西/北卡)</td><td>20-25</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="New England National Scenic Trail美国 (康涅狄格/马萨诸塞)"><td>New England National Scenic Trail</td><td>378</td><td>美国 (康涅狄格/马萨诸塞)</td><td>15-20</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Potomac Heritage National Scenic Trail美国 (多州)"><td>Potomac Heritage National Scenic Trail</td><td>1487</td><td>美国 (多州)</td><td>50+</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Glowny Szlak Beskidzki波兰"><td>Glowny Szlak Beskidzki</td><td>520</td><td>波兰</td><td>25-30</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Baltic Coastal Trail爱沙尼亚/拉脱维亚/立陶宛"><td>Baltic Coastal Trail</td><td>1420</td><td>爱沙尼亚/拉脱维亚/立陶宛</td><td>50+</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Salento Trail意大利"><td>Salento Trail</td><td>115</td><td>意大利</td><td>5-7</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Cumbria Way英国 (英格兰)"><td>Cumbria Way</td><td>116</td><td>英国 (英格兰)</td><td>6-8</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="England Coast to Coast Walk英国"><td>England Coast to Coast Walk</td><td>300</td><td>英国</td><td>12-15</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Greater Patagonian Trail智利/阿根廷"><td>Greater Patagonian Trail</td><td>3000+</td><td>智利/阿根廷</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="American Discovery Trail美国 (多州)"><td>American Discovery Trail</td><td>10943</td><td>美国 (多州)</td><td>数月</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Baker Trail美国 (宾夕法尼亚)"><td>Baker Trail</td><td>220</td><td>美国 (宾夕法尼亚)</td><td>10-12</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Natchez Trace National Scenic Trail美国 (密西西比/田纳西)"><td>Natchez Trace National Scenic Trail</td><td>444</td><td>美国 (密西西比/田纳西)</td><td>18-22</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Jotunheimen Traverse挪威"><td>Jotunheimen Traverse</td><td>93</td><td>挪威</td><td>5-7</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Danlan Old Trails台湾"><td>Danlan Old Trails</td><td>100+</td><td>台湾</td><td>5-7</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Rota Vicentina Fisherman's Trail full葡萄牙"><td>Rota Vicentina Fisherman's Trail full</td><td>226</td><td>葡萄牙</td><td>10-12</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="GR132 La Gomera full西班牙 (加那利群岛)"><td>GR132 La Gomera full</td><td>116+</td><td>西班牙 (加那利群岛)</td><td>5-8</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="Nakasendo Way full日本"><td>Nakasendo Way full</td><td>500+</td><td>日本</td><td>20+</td><td>国际</td></tr>
+<tr data-kind="intl" data-text="GR20 (完整变体)法国 (科西嘉)"><td>GR20 (完整变体)</td><td>180</td><td>法国 (科西嘉)</td><td>15</td><td>国际</td></tr>
+</tbody>
+</table>
+</div>
+
+<p style="font-size:0.86rem;color:#64748b;margin-top:18px;">说明：本表为路线基础信息汇总，长度与天数为概略值，同一路线存在多种走法与变体。具体路况、许可、向导要求请以出行前最新信息为准。</p>
+
+<script>
+function rtFilter(){
+  var q=document.getElementById('rtSearch').value.trim().toLowerCase();
+  var k=document.getElementById('rtKind').value;
+  var rows=document.querySelectorAll('#rtTable tbody tr');
+  var n=0;
+  rows.forEach(function(tr){
+    var okText=!q||tr.getAttribute('data-text').toLowerCase().indexOf(q)>=0;
+    var okKind=!k||tr.getAttribute('data-kind')===k;
+    var show=okText&&okKind;
+    tr.style.display=show?'':'none';
+    if(show)n++;
+  });
+  document.getElementById('rtCount').textContent='显示 '+n+' 条';
+}
+rtFilter();
+</script>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 ForOutdoor · 内容仅供学习参考，户外有风险请量力而行 · 联系：hanlinnapoleon@gmail.com</p>
+  </div>
+</footer>
+</body>
+</html>
