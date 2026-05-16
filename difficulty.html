@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>路线量化难度评分 - ForOutdoor</title>
+<meta name="description" content="ForOutdoor 是一个专注户外装备评测、户外运动入门指南、徒步登山滑雪露营装备选购建议的内容站点。内容覆盖冲锋衣、帐篷、睡袋、登山鞋、滑雪装备等品类。">
+<meta name="keywords" content="户外装备,冲锋衣,帐篷,登山鞋,滑雪装备,徒步装备,露营装备,户外评测">
+<meta name="author" content="ForOutdoor 编辑部">
+<link rel="canonical" href="https://your-username.github.io/forOutdoor/difficulty.html">
+<meta property="og:title" content="路线量化难度评分 - ForOutdoor">
+<meta property="og:description" content="ForOutdoor 是一个专注户外装备评测、户外运动入门指南、徒步登山滑雪露营装备选购建议的内容站点。内容覆盖冲锋衣、帐篷、睡袋、登山鞋、滑雪装备等品类。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://your-username.github.io/forOutdoor">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛰</text></svg>">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">⛰ ForOutdoor</a>
+    <nav class="main-nav">
+      <a href="index.html">首页</a>
+      <a href="categories/hiking.html">徒步</a>
+      <a href="categories/camping.html">露营</a>
+      <a href="categories/ski.html">滑雪</a>
+      <a href="categories/apparel.html">户外服装</a>
+      <a href="equipment.html">装备清单</a>
+      <a href="routes.html">徒步路线</a>
+      <a href="route-table.html">路线大全</a>
+      <a href="about.html">关于</a>
+      <a href="contact.html">联系</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+
+<div class="hero">
+  <h1>路线量化难度评分</h1>
+  <p>对 52 条经典路线进行量化难度评分，综合天数、距离、爬升下降、平均海拔、气温等维度计算。"基准"行（10km 距离、500m 爬升、500m 下降、500m 海拔、25℃、徒步）相对系数为 1，其他路线的相对系数表示难度是基准的多少倍。</p>
+</div>
+
+<div class="rt-controls">
+  <input type="text" id="diffSearch" placeholder="搜索路线名 / 省份 / 形式" oninput="diffFilter()">
+  <span id="diffCount" class="rt-count"></span>
+</div>
+
+<div class="rt-table-wrap">
+<table class="rt-table diff-table" id="diffTable">
+<thead><tr>
+<th>路线名称</th><th>形式</th><th>省份</th><th>天数</th><th>距离</th><th>爬升</th><th>下降</th>
+<th>平均海拔</th><th>气温</th><th>月份</th><th>难度系数</th><th>相对系数</th><th>天难度</th>
+</tr></thead>
+<tbody>
+<tr class="d-extreme" data-text="梅里外转云南徒步"><td>梅里外转</td><td>徒步</td><td>云南</td><td>10</td><td>285</td><td>16500</td><td>16500</td><td>3000</td><td>10</td><td>4-10月</td><td><strong>951.84375</strong></td><td>51.19159663865546</td><td>5.119159663865546</td></tr>
+<tr class="d-extreme" data-text="库拉岗日大环西藏徒步"><td>库拉岗日大环</td><td>徒步</td><td>西藏</td><td>7</td><td>175</td><td>9800</td><td>9800</td><td>4500</td><td></td><td>5-10月</td><td><strong>754.6875</strong></td><td>40.588235294117645</td><td>5.798319327731092</td></tr>
+<tr class="d-extreme" data-text="狼塔C+V新疆徒步"><td>狼塔C+V</td><td>徒步</td><td>新疆</td><td>7</td><td>188</td><td>10000</td><td>10000</td><td>3000</td><td>-5</td><td>8-10月</td><td><strong>743.6</strong></td><td>39.99193277310925</td><td>5.713133253301321</td></tr>
+<tr class="d-extreme" data-text="克勒青河谷新疆徒步"><td>克勒青河谷</td><td>徒步</td><td>新疆</td><td>7</td><td>234</td><td>6000</td><td>6000</td><td>4100</td><td></td><td>4-10月</td><td><strong>735.075</strong></td><td>39.533445378151264</td><td>5.647635054021609</td></tr>
+<tr class="d-extreme" data-text="念青东徒步西藏徒步"><td>念青东徒步</td><td>徒步</td><td>西藏</td><td>8</td><td>122</td><td>4200</td><td>4200</td><td>4700</td><td></td><td>10月</td><td><strong>440.53125</strong></td><td>23.692436974789917</td><td>2.9615546218487396</td></tr>
+<tr class="d-extreme" data-text="格聂C四川徒步"><td>格聂C</td><td>徒步</td><td>四川</td><td>4</td><td>135</td><td>4000</td><td>4000</td><td>4200</td><td>10</td><td>5-10月</td><td><strong>386.58750000000003</strong></td><td>20.791260504201684</td><td>5.197815126050421</td></tr>
+<tr class="d-extreme" data-text="珠峰东坡西藏徒步"><td>珠峰东坡</td><td>徒步</td><td>西藏</td><td>7</td><td>89</td><td>4700</td><td>4700</td><td>4700</td><td>0</td><td>5-10月</td><td><strong>379.809375</strong></td><td>20.42672268907563</td><td>2.918103241296518</td></tr>
+<tr class="d-extreme" data-text="乌孙古道新疆徒步"><td>乌孙古道</td><td>徒步</td><td>新疆</td><td>6</td><td>110</td><td>6700</td><td>6700</td><td>3000</td><td>10</td><td>5-10月</td><td><strong>376.26875</strong></td><td>20.236302521008405</td><td>3.3727170868347343</td></tr>
+<tr class="d-extreme" data-text="希夏邦马环线西藏徒步"><td>希夏邦马环线</td><td>徒步</td><td>西藏</td><td>5</td><td>77</td><td>4800</td><td>4800</td><td>4800</td><td>0</td><td>10月</td><td><strong>357.6</strong></td><td>19.232268907563025</td><td>3.846453781512605</td></tr>
+<tr class="d-extreme" data-text="鳌太线陕西徒步"><td>鳌太线</td><td>徒步</td><td>陕西</td><td>3</td><td>83</td><td>6300</td><td>7100</td><td>3500</td><td>10</td><td>6-9月</td><td><strong>339.178125</strong></td><td>18.24151260504202</td><td>6.0805042016806725</td></tr>
+<tr class="d-extreme" data-text="夏特古道新疆徒步"><td>夏特古道</td><td>徒步</td><td>新疆</td><td>5</td><td>115</td><td>3500</td><td>3500</td><td>2700</td><td></td><td></td><td><strong>336.04687499999994</strong></td><td>18.073109243697477</td><td>3.614621848739495</td></tr>
+<tr class="d-extreme" data-text="梅里雨崩云南徒步"><td>梅里雨崩</td><td>徒步</td><td>云南</td><td>5</td><td>65</td><td>6700</td><td>6700</td><td>3600</td><td>10</td><td></td><td><strong>311.96750000000003</strong></td><td>16.778084033613446</td><td>3.355616806722689</td></tr>
+<tr class="d-hard" data-text="博格达大环线新疆徒步"><td>博格达大环线</td><td>徒步</td><td>新疆</td><td>4</td><td>80</td><td>4300</td><td>4200</td><td>3000</td><td>0</td><td>6-8月</td><td><strong>297</strong></td><td>15.973109243697479</td><td>3.9932773109243698</td></tr>
+<tr class="d-hard" data-text="亚丁转山四川徒步"><td>亚丁转山</td><td>徒步</td><td>四川</td><td>4</td><td>70</td><td>3600</td><td>3600</td><td>4400</td><td>0</td><td>4-10月</td><td><strong>288.3</strong></td><td>15.505210084033614</td><td>3.8763025210084034</td></tr>
+<tr class="d-hard" data-text="墨脱徒步西藏徒步"><td>墨脱徒步</td><td>徒步</td><td>西藏</td><td>4</td><td>93</td><td>2600</td><td>5000</td><td>2000</td><td></td><td>4-11月</td><td><strong>270</strong></td><td>14.521008403361344</td><td>3.630252100840336</td></tr>
+<tr class="d-hard" data-text="龙眼穿越四川徒步"><td>龙眼穿越</td><td>徒步</td><td>四川</td><td>6</td><td>55</td><td>4600</td><td>4600</td><td>3500</td><td></td><td>5-10月</td><td><strong>267.375</strong></td><td>14.37983193277311</td><td>2.396638655462185</td></tr>
+<tr class="d-hard" data-text="扎尕那甘肃徒步"><td>扎尕那</td><td>徒步</td><td>甘肃</td><td>3</td><td>63</td><td>4200</td><td>4200</td><td>3500</td><td>10</td><td>6-8月</td><td><strong>235.4625</strong></td><td>12.663529411764706</td><td>4.221176470588236</td></tr>
+<tr class="d-hard" data-text="冈仁波齐转山新疆徒步"><td>冈仁波齐转山</td><td>徒步</td><td>新疆</td><td>2</td><td>55</td><td>1800</td><td>1800</td><td>5000</td><td>0</td><td>4-10月</td><td><strong>199.875</strong></td><td>10.749579831932772</td><td>5.374789915966386</td></tr>
+<tr class="d-hard" data-text="库拉岗日西藏徒步"><td>库拉岗日</td><td>徒步</td><td>西藏</td><td>5</td><td>45</td><td>2500</td><td>2500</td><td>4500</td><td></td><td>5-10月</td><td><strong>193.359375</strong></td><td>10.399159663865547</td><td>2.0798319327731094</td></tr>
+<tr class="d-hard" data-text="喀拉峻大草原新疆徒步"><td>喀拉峻大草原</td><td>徒步</td><td>新疆</td><td>3</td><td>60</td><td>2000</td><td>2000</td><td>2500</td><td>10</td><td>5月到7月</td><td><strong>153.5625</strong></td><td>8.258823529411766</td><td>2.7529411764705887</td></tr>
+<tr class="d-med" data-text="长毕穿四川徒步"><td>长毕穿</td><td>徒步</td><td>四川</td><td>3</td><td>52</td><td>1700</td><td>1700</td><td>3700</td><td>10</td><td></td><td><strong>147.346875</strong></td><td>7.924537815126051</td><td>2.641512605042017</td></tr>
+<tr class="d-med" data-text="船底顶广东徒步"><td>船底顶</td><td>徒步</td><td>广东</td><td>1</td><td>50</td><td>4500</td><td>4500</td><td>1000</td><td>25</td><td>全年</td><td><strong>132.1875</strong></td><td>7.109243697478991</td><td>7.109243697478991</td></tr>
+<tr class="d-med" data-text="武功山穿越广东徒步"><td>武功山穿越</td><td>徒步</td><td>广东</td><td>1</td><td>45</td><td>3300</td><td>3300</td><td>1300</td><td>20</td><td>全年</td><td><strong>120.84187500000002</strong></td><td>6.499058823529412</td><td>6.499058823529412</td></tr>
+<tr class="d-med" data-text="峨眉山四川爬山"><td>峨眉山</td><td>爬山</td><td>四川</td><td>1</td><td>22</td><td>3000</td><td>3000</td><td>1500</td><td>0</td><td></td><td><strong>119.34375</strong></td><td>6.4184873949579835</td><td>6.4184873949579835</td></tr>
+<tr class="d-med" data-text="白卡莲银广东徒步"><td>白卡莲银</td><td>徒步</td><td>广东</td><td>1</td><td>39</td><td>3300</td><td>3300</td><td>1000</td><td>25</td><td>全年</td><td><strong>99.5625</strong></td><td>5.354621848739495</td><td>5.354621848739495</td></tr>
+<tr class="d-med" data-text="大东山广东徒步"><td>大东山</td><td>徒步</td><td>广东</td><td>1</td><td>36</td><td>3000</td><td>3000</td><td>1300</td><td>25</td><td>全年</td><td><strong>94.16250000000001</strong></td><td>5.064201680672269</td><td>5.064201680672269</td></tr>
+<tr class="d-med" data-text="虎跳峡云南徒步"><td>虎跳峡</td><td>徒步</td><td>云南</td><td>1</td><td>27</td><td>2000</td><td>2000</td><td>2000</td><td>20</td><td>5-7月</td><td><strong>78.375</strong></td><td>4.215126050420168</td><td>4.215126050420168</td></tr>
+<tr class="d-med" data-text="银屏山穿越广东徒步"><td>银屏山穿越</td><td>徒步</td><td>广东</td><td>1</td><td>30</td><td>2800</td><td>2800</td><td>500</td><td>25</td><td>全年</td><td><strong>76.5</strong></td><td>4.114285714285714</td><td>4.114285714285714</td></tr>
+<tr class="d-med" data-text="乌库楚四川登山"><td>乌库楚</td><td>登山</td><td>四川</td><td>3</td><td>12</td><td>1200</td><td>1200</td><td>5000</td><td>0</td><td>全年</td><td><strong>73.125</strong></td><td></td><td>0</td></tr>
+<tr class="d-med" data-text="麦里浩径某段香港徒步"><td>麦里浩径某段</td><td>徒步</td><td>香港</td><td>1</td><td>28</td><td>1800</td><td>1800</td><td>500</td><td>25</td><td>全年</td><td><strong>58.4375</strong></td><td>3.142857142857143</td><td>3.142857142857143</td></tr>
+<tr class="d-med" data-text="海角七恋广东徒步"><td>海角七恋</td><td>徒步</td><td>广东</td><td>1</td><td>25</td><td>1500</td><td>1500</td><td>500</td><td>25</td><td>全年</td><td><strong>50.46875</strong></td><td>2.7142857142857144</td><td>2.7142857142857144</td></tr>
+<tr class="d-easy" data-text="古北口司马台长城北京徒步"><td>古北口司马台长城</td><td>徒步</td><td>北京</td><td>2</td><td>27</td><td>1000</td><td>1000</td><td>350</td><td>20</td><td></td><td><strong>48.221250000000005</strong></td><td>2.5934117647058827</td><td>1.2967058823529414</td></tr>
+<tr class="d-easy" data-text="拉胡广东徒步"><td>拉胡</td><td>徒步</td><td>广东</td><td>1</td><td>20</td><td>1200</td><td>1200</td><td>600</td><td>25</td><td>全年</td><td><strong>40.85</strong></td><td>2.1969747899159664</td><td>2.1969747899159664</td></tr>
+<tr class="d-easy" data-text="四方山飞云顶广东徒步"><td>四方山飞云顶</td><td>徒步</td><td>广东</td><td>1</td><td>20</td><td>1200</td><td>1200</td><td>600</td><td>25</td><td>全年</td><td><strong>40.85</strong></td><td>2.1969747899159664</td><td>2.1969747899159664</td></tr>
+<tr class="d-easy" data-text="三水线广东徒步"><td>三水线</td><td>徒步</td><td>广东</td><td>1</td><td>17</td><td>1400</td><td>1400</td><td>500</td><td>25</td><td>全年</td><td><strong>40.375</strong></td><td>2.1714285714285713</td><td>2.1714285714285713</td></tr>
+<tr class="d-easy" data-text="爱心线广东徒步"><td>爱心线</td><td>徒步</td><td>广东</td><td>1</td><td>17</td><td>1250</td><td>1250</td><td>500</td><td>25</td><td>全年</td><td><strong>37.984375</strong></td><td>2.0428571428571427</td><td>2.0428571428571427</td></tr>
+<tr class="d-easy" data-text="徽杭古道徽杭徒步"><td>徽杭古道</td><td>徒步</td><td>徽杭</td><td>1</td><td>17</td><td>900</td><td>900</td><td>600</td><td>20</td><td></td><td><strong>36.066250000000004</strong></td><td>1.9396974789915968</td><td>1.9396974789915968</td></tr>
+<tr class="d-easy" data-text="罗浮山广东徒步"><td>罗浮山</td><td>徒步</td><td>广东</td><td>1</td><td>16</td><td>1000</td><td>1000</td><td>600</td><td>25</td><td>全年</td><td><strong>33.324999999999996</strong></td><td>1.792268907563025</td><td>1.792268907563025</td></tr>
+<tr class="d-easy" data-text="大南山广东徒步"><td>大南山</td><td>徒步</td><td>广东</td><td>1</td><td>14</td><td>1000</td><td>1000</td><td>700</td><td>25</td><td>全年</td><td><strong>31.537499999999998</strong></td><td>1.6961344537815124</td><td>1.6961344537815124</td></tr>
+<tr class="d-easy" data-text="梧桐山广东徒步"><td>梧桐山</td><td>徒步</td><td>广东</td><td>1</td><td>12</td><td>900</td><td>900</td><td>500</td><td>20</td><td>全年</td><td><strong>29.803125</strong></td><td>1.602857142857143</td><td>1.602857142857143</td></tr>
+<tr class="d-base" data-text="基准中国徒步"><td>基准</td><td>徒步</td><td>中国</td><td>1</td><td>10</td><td>500</td><td>500</td><td>500</td><td>25</td><td></td><td><strong>18.59375</strong></td><td>1</td><td>1</td></tr>
+<tr class="d-easy" data-text="独龙江丙中洛云南自驾"><td>独龙江丙中洛</td><td>自驾</td><td>云南</td><td>7</td><td></td><td></td><td></td><td></td><td></td><td>6月9月</td><td><strong>0</strong></td><td>0</td><td>0</td></tr>
+<tr class="d-easy" data-text="牛背山四川自驾"><td>牛背山</td><td>自驾</td><td>四川</td><td>2</td><td></td><td></td><td></td><td></td><td></td><td>4-5月</td><td><strong>0</strong></td><td></td><td>0</td></tr>
+<tr class="d-easy" data-text="金银山四川登山"><td>金银山</td><td>登山</td><td>四川</td><td>7</td><td></td><td></td><td></td><td></td><td></td><td>45678910</td><td><strong>0</strong></td><td></td><td>0</td></tr>
+<tr class="d-easy" data-text="宁金抗沙西藏登山"><td>宁金抗沙</td><td>登山</td><td>西藏</td><td>9</td><td></td><td></td><td></td><td></td><td></td><td>4-10月</td><td><strong>0</strong></td><td></td><td>0</td></tr>
+<tr class="d-easy" data-text="慕士塔格新疆登山"><td>慕士塔格</td><td>登山</td><td>新疆</td><td>11</td><td></td><td></td><td></td><td></td><td></td><td>4-10月</td><td><strong>0</strong></td><td></td><td>0</td></tr>
+<tr class="d-easy" data-text="中山峰四川登山"><td>中山峰</td><td>登山</td><td>四川</td><td>10</td><td></td><td></td><td></td><td></td><td></td><td>4-10月</td><td><strong>0</strong></td><td></td><td>0</td></tr>
+<tr class="d-easy" data-text="长白山吉林爬山"><td>长白山</td><td>爬山</td><td>吉林</td><td>3</td><td></td><td></td><td></td><td></td><td></td><td>45678910</td><td><strong>0</strong></td><td></td><td>0</td></tr>
+<tr class="d-easy" data-text="库拉岗日"><td>库拉岗日</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><strong>0</strong></td><td></td><td></td></tr>
+<tr class="d-easy" data-text="库拉岗日"><td>库拉岗日</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><strong>0</strong></td><td></td><td></td></tr>
+<tr class="d-easy" data-text="乃钦康桑"><td>乃钦康桑</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><strong>0</strong></td><td></td><td></td></tr>
+<tr class="d-easy" data-text="卡若拉山"><td>卡若拉山</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><strong>0</strong></td><td></td><td></td></tr>
+</tbody>
+</table>
+</div>
+
+<p style="font-size:0.86rem;color:#64748b;margin-top:18px;">颜色：灰=基准 · 绿=轻松 · 黄=中等 · 橙=较难 · 红=高难度。数据来源：用户整理的量化分析表，难度系数为综合加权值，仅作参考。</p>
+
+<script>
+function diffFilter(){
+  var q=document.getElementById('diffSearch').value.trim().toLowerCase();
+  var rows=document.querySelectorAll('#diffTable tbody tr');
+  var n=0;
+  rows.forEach(function(tr){
+    var ok=!q||tr.getAttribute('data-text').toLowerCase().indexOf(q)>=0;
+    tr.style.display=ok?'':'none';
+    if(ok)n++;
+  });
+  document.getElementById('diffCount').textContent='显示 '+n+' 条';
+}
+diffFilter();
+</script>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 ForOutdoor · 内容仅供学习参考，户外有风险请量力而行 · 联系：hanlinnapoleon@gmail.com</p>
+  </div>
+</footer>
+</body>
+</html>

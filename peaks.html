@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>世界山峰排行 - ForOutdoor</title>
+<meta name="description" content="ForOutdoor 是一个专注户外装备评测、户外运动入门指南、徒步登山滑雪露营装备选购建议的内容站点。内容覆盖冲锋衣、帐篷、睡袋、登山鞋、滑雪装备等品类。">
+<meta name="keywords" content="户外装备,冲锋衣,帐篷,登山鞋,滑雪装备,徒步装备,露营装备,户外评测">
+<meta name="author" content="ForOutdoor 编辑部">
+<link rel="canonical" href="https://your-username.github.io/forOutdoor/peaks.html">
+<meta property="og:title" content="世界山峰排行 - ForOutdoor">
+<meta property="og:description" content="ForOutdoor 是一个专注户外装备评测、户外运动入门指南、徒步登山滑雪露营装备选购建议的内容站点。内容覆盖冲锋衣、帐篷、睡袋、登山鞋、滑雪装备等品类。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://your-username.github.io/forOutdoor">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛰</text></svg>">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">⛰ ForOutdoor</a>
+    <nav class="main-nav">
+      <a href="index.html">首页</a>
+      <a href="categories/hiking.html">徒步</a>
+      <a href="categories/camping.html">露营</a>
+      <a href="categories/ski.html">滑雪</a>
+      <a href="categories/apparel.html">户外服装</a>
+      <a href="equipment.html">装备清单</a>
+      <a href="routes.html">徒步路线</a>
+      <a href="route-table.html">路线大全</a>
+      <a href="about.html">关于</a>
+      <a href="contact.html">联系</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+
+<div class="hero">
+  <h1>世界山峰排行</h1>
+  <p>全球海拔最高的 118 座山峰，按海拔降序排列。海拔 8000m 以上的"8000 米独立山峰"全球只有 14 座，本表全部收录。数据来源：用户整理的山峰数据表。</p>
+</div>
+
+<div class="rt-controls">
+  <input type="text" id="pkSearch" placeholder="搜索山峰名 / 山脉 / 所在地" oninput="pkFilter()">
+  <span id="pkCount" class="rt-count"></span>
+</div>
+
+<div class="rt-table-wrap">
+<table class="rt-table" id="pkTable">
+<thead><tr><th>排名</th><th>山峰名称</th><th>海拔 (米)</th><th>所属山脉</th><th>所在地</th></tr></thead>
+<tbody>
+<tr data-text="珠穆朗玛峰 (Everest)喜马拉雅中国 / 尼泊尔"><td>1</td><td>珠穆朗玛峰 (Everest)</td><td><strong>8848</strong></td><td>喜马拉雅</td><td>中国 / 尼泊尔</td></tr>
+<tr data-text="乔戈里峰 (K2)喀喇昆仑中国 / 巴基斯坦"><td>2</td><td>乔戈里峰 (K2)</td><td><strong>8611</strong></td><td>喀喇昆仑</td><td>中国 / 巴基斯坦</td></tr>
+<tr data-text="干城章嘉峰 (Kangchenjunga)喜马拉雅尼泊尔 / 印度"><td>3</td><td>干城章嘉峰 (Kangchenjunga)</td><td><strong>8586</strong></td><td>喜马拉雅</td><td>尼泊尔 / 印度</td></tr>
+<tr data-text="洛子峰 (Lhotse)喜马拉雅中国 / 尼泊尔"><td>4</td><td>洛子峰 (Lhotse)</td><td><strong>8516</strong></td><td>喜马拉雅</td><td>中国 / 尼泊尔</td></tr>
+<tr data-text="马卡鲁峰 (Makalu)喜马拉雅中国 / 尼泊尔"><td>5</td><td>马卡鲁峰 (Makalu)</td><td><strong>8485</strong></td><td>喜马拉雅</td><td>中国 / 尼泊尔</td></tr>
+<tr data-text="卓奥友峰 (Cho Oyu)喜马拉雅中国 / 尼泊尔"><td>6</td><td>卓奥友峰 (Cho Oyu)</td><td><strong>8188</strong></td><td>喜马拉雅</td><td>中国 / 尼泊尔</td></tr>
+<tr data-text="道拉吉里 I 峰 (Dhaulagiri I)喜马拉雅尼泊尔"><td>7</td><td>道拉吉里 I 峰 (Dhaulagiri I)</td><td><strong>8167</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="马纳斯鲁峰 (Manaslu)喜马拉雅尼泊尔"><td>8</td><td>马纳斯鲁峰 (Manaslu)</td><td><strong>8163</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="南迦帕尔巴特峰 (Nanga Parbat)喜马拉雅巴基斯坦"><td>9</td><td>南迦帕尔巴特峰 (Nanga Parbat)</td><td><strong>8126</strong></td><td>喜马拉雅</td><td>巴基斯坦</td></tr>
+<tr data-text="安纳布尔纳 I 峰 (Annapurna I)喜马拉雅尼泊尔"><td>10</td><td>安纳布尔纳 I 峰 (Annapurna I)</td><td><strong>8091</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="加舒尔布鲁木 I 峰 (Gasherbrum I)喀喇昆仑中国 / 巴基斯坦"><td>11</td><td>加舒尔布鲁木 I 峰 (Gasherbrum I)</td><td><strong>8080</strong></td><td>喀喇昆仑</td><td>中国 / 巴基斯坦</td></tr>
+<tr data-text="布洛阿特峰 (Broad Peak)喀喇昆仑中国 / 巴基斯坦"><td>12</td><td>布洛阿特峰 (Broad Peak)</td><td><strong>8051</strong></td><td>喀喇昆仑</td><td>中国 / 巴基斯坦</td></tr>
+<tr data-text="加舒尔布鲁木 II 峰 (Gasherbrum II)喀喇昆仑中国 / 巴基斯坦"><td>13</td><td>加舒尔布鲁木 II 峰 (Gasherbrum II)</td><td><strong>8035</strong></td><td>喀喇昆仑</td><td>中国 / 巴基斯坦</td></tr>
+<tr data-text="希夏邦马峰 (Shishapangma)喜马拉雅中国"><td>14</td><td>希夏邦马峰 (Shishapangma)</td><td><strong>8027</strong></td><td>喜马拉雅</td><td>中国</td></tr>
+<tr data-text="格重康峰 (Gyachung Kang)喜马拉雅中国 / 尼泊尔"><td>15</td><td>格重康峰 (Gyachung Kang)</td><td><strong>7952</strong></td><td>喜马拉雅</td><td>中国 / 尼泊尔</td></tr>
+<tr data-text="加舒尔布鲁木 III 峰 (Gasherbrum III)喀喇昆仑中国 / 巴基斯坦"><td>16</td><td>加舒尔布鲁木 III 峰 (Gasherbrum III)</td><td><strong>7946</strong></td><td>喀喇昆仑</td><td>中国 / 巴基斯坦</td></tr>
+<tr data-text="安纳布尔纳 II 峰 (Annapurna II)喜马拉雅尼泊尔"><td>17</td><td>安纳布尔纳 II 峰 (Annapurna II)</td><td><strong>7937</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="加舒尔布鲁木 IV 峰 (Gasherbrum IV)喀喇昆仑中国 / 巴基斯坦"><td>18</td><td>加舒尔布鲁木 IV 峰 (Gasherbrum IV)</td><td><strong>7925</strong></td><td>喀喇昆仑</td><td>中国 / 巴基斯坦</td></tr>
+<tr data-text="喜马尔佐利山 (Himalchuli)喜马拉雅尼泊尔"><td>19</td><td>喜马尔佐利山 (Himalchuli)</td><td><strong>7893</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="迪斯特吉尔峰 (Distaghil Sar)喀喇昆仑巴基斯坦"><td>20</td><td>迪斯特吉尔峰 (Distaghil Sar)</td><td><strong>7884</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="恩加迪楚里峰 (Ngadi Chuli)喜马拉雅尼泊尔"><td>21</td><td>恩加迪楚里峰 (Ngadi Chuli)</td><td><strong>7871</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="努子峰 (Nuptse)喜马拉雅尼泊尔"><td>22</td><td>努子峰 (Nuptse)</td><td><strong>7861</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="昆扬基什峰 (Khunyang Chhish)喀喇昆仑巴基斯坦"><td>23</td><td>昆扬基什峰 (Khunyang Chhish)</td><td><strong>7852</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="玛夏布鲁姆峰 (Masherbrum)喀喇昆仑巴基斯坦"><td>24</td><td>玛夏布鲁姆峰 (Masherbrum)</td><td><strong>7821</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="楠达德维峰 (Nanda Devi)喜马拉雅印度"><td>25</td><td>楠达德维峰 (Nanda Devi)</td><td><strong>7816</strong></td><td>喜马拉雅</td><td>印度</td></tr>
+<tr data-text="绰莫隆佐峰 (Chomo Lonzo)喜马拉雅中国"><td>26</td><td>绰莫隆佐峰 (Chomo Lonzo)</td><td><strong>7804</strong></td><td>喜马拉雅</td><td>中国</td></tr>
+<tr data-text="巴托罗岗日峰 (Batura Sar)喀喇昆仑巴基斯坦"><td>27</td><td>巴托罗岗日峰 (Batura Sar)</td><td><strong>7795</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="堪巨提峰 (Kanjut Sar)喀喇昆仑巴基斯坦"><td>28</td><td>堪巨提峰 (Kanjut Sar)</td><td><strong>7790</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="拉卡波希峰 (Rakaposhi)喀喇昆仑巴基斯坦"><td>29</td><td>拉卡波希峰 (Rakaposhi)</td><td><strong>7788</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="南迦巴瓦峰 (Namcha Barwa)喜马拉雅中国"><td>30</td><td>南迦巴瓦峰 (Namcha Barwa)</td><td><strong>7782</strong></td><td>喜马拉雅</td><td>中国</td></tr>
+<tr data-text="卡美特山 (Kamet)喜马拉雅印度"><td>31</td><td>卡美特山 (Kamet)</td><td><strong>7756</strong></td><td>喜马拉雅</td><td>印度</td></tr>
+<tr data-text="道拉吉里 II 峰 (Dhaulagiri II)喜马拉雅尼泊尔"><td>32</td><td>道拉吉里 II 峰 (Dhaulagiri II)</td><td><strong>7751</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="萨尔托洛岗日峰 (Saltoro Kangri)喀喇昆仑印度 / 巴基斯坦"><td>33</td><td>萨尔托洛岗日峰 (Saltoro Kangri)</td><td><strong>7742</strong></td><td>喀喇昆仑</td><td>印度 / 巴基斯坦</td></tr>
+<tr data-text="贾努峰 / 库巴卡纳 (Jannu)喜马拉雅尼泊尔"><td>34</td><td>贾努峰 / 库巴卡纳 (Jannu)</td><td><strong>7711</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="特里奇米尔峰 (Tirich Mir)兴都库什巴基斯坦"><td>35</td><td>特里奇米尔峰 (Tirich Mir)</td><td><strong>7708</strong></td><td>兴都库什</td><td>巴基斯坦</td></tr>
+<tr data-text="摩勒门青峰 (Molamenqing)喜马拉雅中国"><td>36</td><td>摩勒门青峰 (Molamenqing)</td><td><strong>7703</strong></td><td>喜马拉雅</td><td>中国</td></tr>
+<tr data-text="古拉曼达塔峰 / 纳木那尼 (Gurla Mandhata)喜马拉雅中国"><td>37</td><td>古拉曼达塔峰 / 纳木那尼 (Gurla Mandhata)</td><td><strong>7694</strong></td><td>喜马拉雅</td><td>中国</td></tr>
+<tr data-text="萨瑟岗日 I 峰 (Saser Kangri I)喀喇昆仑印度"><td>38</td><td>萨瑟岗日 I 峰 (Saser Kangri I)</td><td><strong>7672</strong></td><td>喀喇昆仑</td><td>印度</td></tr>
+<tr data-text="乔戈里萨峰 (Chogolisa)喀喇昆仑巴基斯坦"><td>39</td><td>乔戈里萨峰 (Chogolisa)</td><td><strong>7665</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="道拉吉里 IV 峰 (Dhaulagiri IV)喜马拉雅尼泊尔"><td>40</td><td>道拉吉里 IV 峰 (Dhaulagiri IV)</td><td><strong>7661</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="公格尔峰 (Kongur Tagh)帕米尔中国"><td>41</td><td>公格尔峰 (Kongur Tagh)</td><td><strong>7649</strong></td><td>帕米尔</td><td>中国</td></tr>
+<tr data-text="道拉吉里 III 峰 (Dhaulagiri III)喜马拉雅尼泊尔"><td>42</td><td>道拉吉里 III 峰 (Dhaulagiri III)</td><td><strong>7615</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="希斯帕尔峰 (Shispare)喀喇昆仑巴基斯坦"><td>43</td><td>希斯帕尔峰 (Shispare)</td><td><strong>7611</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="特里沃峰 (Trivor)喀喇昆仑巴基斯坦"><td>44</td><td>特里沃峰 (Trivor)</td><td><strong>7577</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="干卡本森峰 (Gangkhar Puensum)喜马拉雅不丹 / 中国"><td>45</td><td>干卡本森峰 (Gangkhar Puensum)</td><td><strong>7570</strong></td><td>喜马拉雅</td><td>不丹 / 中国</td></tr>
+<tr data-text="贡嘎山 (Gongga Shan)横断山脉中国"><td>46</td><td>贡嘎山 (Gongga Shan)</td><td><strong>7556</strong></td><td>横断山脉</td><td>中国</td></tr>
+<tr data-text="安纳布尔纳 III 峰 (Annapurna III)喜马拉雅尼泊尔"><td>47</td><td>安纳布尔纳 III 峰 (Annapurna III)</td><td><strong>7555</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="慕士塔格峰 (Muztagh Ata)帕米尔中国"><td>48</td><td>慕士塔格峰 (Muztagh Ata)</td><td><strong>7546</strong></td><td>帕米尔</td><td>中国</td></tr>
+<tr data-text="斯基洋康里峰 (Skyang Kangri)喀喇昆仑中国 / 巴基斯坦"><td>49</td><td>斯基洋康里峰 (Skyang Kangri)</td><td><strong>7545</strong></td><td>喀喇昆仑</td><td>中国 / 巴基斯坦</td></tr>
+<tr data-text="章子峰 (Changtse)喜马拉雅中国"><td>50</td><td>章子峰 (Changtse)</td><td><strong>7543</strong></td><td>喜马拉雅</td><td>中国</td></tr>
+<tr data-text="库拉岗日峰 (Kula Kangri)喜马拉雅中国 / 不丹"><td>51</td><td>库拉岗日峰 (Kula Kangri)</td><td><strong>7538</strong></td><td>喜马拉雅</td><td>中国 / 不丹</td></tr>
+<tr data-text="公格尔九别峰 (Kongur Tiube)帕米尔中国"><td>52</td><td>公格尔九别峰 (Kongur Tiube)</td><td><strong>7530</strong></td><td>帕米尔</td><td>中国</td></tr>
+<tr data-text="玛莫斯通岗日峰 (Mamostong Kangri)喀喇昆仑印度"><td>53</td><td>玛莫斯通岗日峰 (Mamostong Kangri)</td><td><strong>7516</strong></td><td>喀喇昆仑</td><td>印度</td></tr>
+<tr data-text="萨瑟岗日 II 峰 (Saser Kangri II E)喀喇昆仑印度"><td>54</td><td>萨瑟岗日 II 峰 (Saser Kangri II E)</td><td><strong>7513</strong></td><td>喀喇昆仑</td><td>印度</td></tr>
+<tr data-text="伊斯梅尔·索莫尼峰 (Ismoil Somoni)帕米尔塔吉克斯坦"><td>55</td><td>伊斯梅尔·索莫尼峰 (Ismoil Somoni)</td><td><strong>7495</strong></td><td>帕米尔</td><td>塔吉克斯坦</td></tr>
+<tr data-text="萨瑟岗日 III 峰 (Saser Kangri III)喀喇昆仑印度"><td>56</td><td>萨瑟岗日 III 峰 (Saser Kangri III)</td><td><strong>7495</strong></td><td>喀喇昆仑</td><td>印度</td></tr>
+<tr data-text="诺沙克峰 (Noshaq)兴都库什阿富汗 / 巴基斯坦"><td>57</td><td>诺沙克峰 (Noshaq)</td><td><strong>7492</strong></td><td>兴都库什</td><td>阿富汗 / 巴基斯坦</td></tr>
+<tr data-text="普马拉里峰 (Pumari Chhish)喀喇昆仑巴基斯坦"><td>58</td><td>普马拉里峰 (Pumari Chhish)</td><td><strong>7492</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="帕苏峰 (Passu Sar)喀喇昆仑巴基斯坦"><td>59</td><td>帕苏峰 (Passu Sar)</td><td><strong>7476</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="尤克申加尔丹峰 (Yukshin Gardan Sar)喀喇昆仑巴基斯坦"><td>60</td><td>尤克申加尔丹峰 (Yukshin Gardan Sar)</td><td><strong>7469</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="特拉木坎力 I 峰 (Teram Kangri I)喀喇昆仑中国 / 印度"><td>61</td><td>特拉木坎力 I 峰 (Teram Kangri I)</td><td><strong>7462</strong></td><td>喀喇昆仑</td><td>中国 / 印度</td></tr>
+<tr data-text="琼桑峰 (Jongsong Peak)喜马拉雅中国 / 印度 / 尼泊尔"><td>62</td><td>琼桑峰 (Jongsong Peak)</td><td><strong>7462</strong></td><td>喜马拉雅</td><td>中国 / 印度 / 尼泊尔</td></tr>
+<tr data-text="马鲁比丁峰 (Malubiting)喀喇昆仑巴基斯坦"><td>63</td><td>马鲁比丁峰 (Malubiting)</td><td><strong>7458</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="甘嘎普尔纳峰 (Gangapurna)喜马拉雅尼泊尔"><td>64</td><td>甘嘎普尔纳峰 (Gangapurna)</td><td><strong>7455</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="托木尔峰 (Jengish Chokusu)天山中国 / 吉尔吉斯斯坦"><td>65</td><td>托木尔峰 (Jengish Chokusu)</td><td><strong>7439</strong></td><td>天山</td><td>中国 / 吉尔吉斯斯坦</td></tr>
+<tr data-text="K12 峰 (K12)喀喇昆仑印度 (争议)"><td>66</td><td>K12 峰 (K12)</td><td><strong>7428</strong></td><td>喀喇昆仑</td><td>印度 (争议)</td></tr>
+<tr data-text="央热峰 / 格涅什 I 峰 (Yangra)喜马拉雅中国 / 尼泊尔"><td>67</td><td>央热峰 / 格涅什 I 峰 (Yangra)</td><td><strong>7422</strong></td><td>喜马拉雅</td><td>中国 / 尼泊尔</td></tr>
+<tr data-text="锡亚康戈里峰 (Sia Kangri)喀喇昆仑巴基斯坦 / 中国"><td>68</td><td>锡亚康戈里峰 (Sia Kangri)</td><td><strong>7422</strong></td><td>喀喇昆仑</td><td>巴基斯坦 / 中国</td></tr>
+<tr data-text="莫姆希尔峰 (Momhil Sar)喀喇昆仑巴基斯坦"><td>69</td><td>莫姆希尔峰 (Momhil Sar)</td><td><strong>7414</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="卡布鲁峰北 (Kabru N)喜马拉雅印度 / 尼泊尔"><td>70</td><td>卡布鲁峰北 (Kabru N)</td><td><strong>7412</strong></td><td>喜马拉雅</td><td>印度 / 尼泊尔</td></tr>
+<tr data-text="斯吉尔布鲁木峰 (Skil Brum)喀喇昆仑巴基斯坦 / 中国"><td>71</td><td>斯吉尔布鲁木峰 (Skil Brum)</td><td><strong>7410</strong></td><td>喀喇昆仑</td><td>巴基斯坦 / 中国</td></tr>
+<tr data-text="哈拉莫什峰 (Haramosh Peak)喀喇昆仑巴基斯坦"><td>72</td><td>哈拉莫什峰 (Haramosh Peak)</td><td><strong>7409</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="伊斯托奥纳尔峰 (Istor-o-Nal)兴都库什巴基斯坦"><td>73</td><td>伊斯托奥纳尔峰 (Istor-o-Nal)</td><td><strong>7403</strong></td><td>兴都库什</td><td>巴基斯坦</td></tr>
+<tr data-text="根特岗日峰 (Ghent Kangri)喀喇昆仑印度 (争议)"><td>74</td><td>根特岗日峰 (Ghent Kangri)</td><td><strong>7401</strong></td><td>喀喇昆仑</td><td>印度 (争议)</td></tr>
+<tr data-text="乌尔塔峰 (Ultar)喀喇昆仑巴基斯坦"><td>75</td><td>乌尔塔峰 (Ultar)</td><td><strong>7388</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="里莫 I 峰 (Rimo I)喀喇昆仑印度"><td>76</td><td>里莫 I 峰 (Rimo I)</td><td><strong>7385</strong></td><td>喀喇昆仑</td><td>印度</td></tr>
+<tr data-text="楚伦峰 (Churen Himal)喜马拉雅尼泊尔"><td>77</td><td>楚伦峰 (Churen Himal)</td><td><strong>7385</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="特拉木坎力 III 峰 (Teram Kangri III)喀喇昆仑中国 / 印度"><td>78</td><td>特拉木坎力 III 峰 (Teram Kangri III)</td><td><strong>7382</strong></td><td>喀喇昆仑</td><td>中国 / 印度</td></tr>
+<tr data-text="舍皮岗日峰 (Sherpi Kangri)喀喇昆仑巴基斯坦 / 印度"><td>79</td><td>舍皮岗日峰 (Sherpi Kangri)</td><td><strong>7380</strong></td><td>喀喇昆仑</td><td>巴基斯坦 / 印度</td></tr>
+<tr data-text="拉布吉康峰 (Labuche Kang)喜马拉雅中国"><td>80</td><td>拉布吉康峰 (Labuche Kang)</td><td><strong>7367</strong></td><td>喜马拉雅</td><td>中国</td></tr>
+<tr data-text="基拉特楚里峰 (Kirat Chuli)喜马拉雅印度 / 尼泊尔"><td>81</td><td>基拉特楚里峰 (Kirat Chuli)</td><td><strong>7362</strong></td><td>喜马拉雅</td><td>印度 / 尼泊尔</td></tr>
+<tr data-text="阿比加明峰 (Abi Gamin)喜马拉雅印度 / 中国"><td>82</td><td>阿比加明峰 (Abi Gamin)</td><td><strong>7355</strong></td><td>喜马拉雅</td><td>印度 / 中国</td></tr>
+<tr data-text="囊帕哥苏姆峰 (Nangpai Gosum)喜马拉雅中国 / 尼泊尔"><td>83</td><td>囊帕哥苏姆峰 (Nangpai Gosum)</td><td><strong>7350</strong></td><td>喜马拉雅</td><td>中国 / 尼泊尔</td></tr>
+<tr data-text="吉米格拉峰 / 双子峰 (Gimmigela)喜马拉雅印度 / 尼泊尔"><td>84</td><td>吉米格拉峰 / 双子峰 (Gimmigela)</td><td><strong>7350</strong></td><td>喜马拉雅</td><td>印度 / 尼泊尔</td></tr>
+<tr data-text="萨拉格拉尔峰 (Saraghrar)兴都库什巴基斯坦"><td>85</td><td>萨拉格拉尔峰 (Saraghrar)</td><td><strong>7349</strong></td><td>兴都库什</td><td>巴基斯坦</td></tr>
+<tr data-text="卓木拉日峰 (Jomolhari)喜马拉雅中国 / 不丹"><td>86</td><td>卓木拉日峰 (Jomolhari)</td><td><strong>7326</strong></td><td>喜马拉雅</td><td>中国 / 不丹</td></tr>
+<tr data-text="查姆朗峰 (Chamlang)喜马拉雅尼泊尔"><td>87</td><td>查姆朗峰 (Chamlang)</td><td><strong>7321</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="冲塔峰 (Chongtar)喀喇昆仑中国"><td>88</td><td>冲塔峰 (Chongtar)</td><td><strong>7315</strong></td><td>喀喇昆仑</td><td>中国</td></tr>
+<tr data-text="巴托罗岗日峰 (Baltoro Kangri)喀喇昆仑巴基斯坦"><td>89</td><td>巴托罗岗日峰 (Baltoro Kangri)</td><td><strong>7312</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="锡光峰 (Siguang Ri)喜马拉雅中国"><td>90</td><td>锡光峰 (Siguang Ri)</td><td><strong>7309</strong></td><td>喜马拉雅</td><td>中国</td></tr>
+<tr data-text="皇冠山 (The Crown)喀喇昆仑中国"><td>91</td><td>皇冠山 (The Crown)</td><td><strong>7295</strong></td><td>喀喇昆仑</td><td>中国</td></tr>
+<tr data-text="加拉白垒峰 (Gyala Peri)喜马拉雅中国"><td>92</td><td>加拉白垒峰 (Gyala Peri)</td><td><strong>7294</strong></td><td>喜马拉雅</td><td>中国</td></tr>
+<tr data-text="波绒日峰 (Porong Ri)喜马拉雅中国"><td>93</td><td>波绒日峰 (Porong Ri)</td><td><strong>7292</strong></td><td>喜马拉雅</td><td>中国</td></tr>
+<tr data-text="拜塔布拉克峰 / 食人魔峰 (Baintha Brakk)喀喇昆仑巴基斯坦"><td>94</td><td>拜塔布拉克峰 / 食人魔峰 (Baintha Brakk)</td><td><strong>7285</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="尤特马鲁峰 (Yutmaru Sar)喀喇昆仑巴基斯坦"><td>95</td><td>尤特马鲁峰 (Yutmaru Sar)</td><td><strong>7283</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="K6 / 巴尔蒂斯坦峰 (K6)喀喇昆仑巴基斯坦"><td>96</td><td>K6 / 巴尔蒂斯坦峰 (K6)</td><td><strong>7282</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="岗彭庆峰 (Kangpenqing)喜马拉雅中国"><td>97</td><td>岗彭庆峰 (Kangpenqing)</td><td><strong>7281</strong></td><td>喜马拉雅</td><td>中国</td></tr>
+<tr data-text="慕士塔格塔峰 (Muztagh Tower)喀喇昆仑巴基斯坦 / 中国"><td>98</td><td>慕士塔格塔峰 (Muztagh Tower)</td><td><strong>7276</strong></td><td>喀喇昆仑</td><td>巴基斯坦 / 中国</td></tr>
+<tr data-text="马纳峰 (Mana Peak)喜马拉雅印度"><td>99</td><td>马纳峰 (Mana Peak)</td><td><strong>7272</strong></td><td>喜马拉雅</td><td>印度</td></tr>
+<tr data-text="道拉吉里 VI 峰 (Dhaulagiri VI)喜马拉雅尼泊尔"><td>100</td><td>道拉吉里 VI 峰 (Dhaulagiri VI)</td><td><strong>7268</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="第朗峰 (Dirang)喜马拉雅中国 / 印度"><td>101</td><td>第朗峰 (Dirang)</td><td><strong>7256</strong></td><td>喜马拉雅</td><td>中国 / 印度</td></tr>
+<tr data-text="拉布吉康 III 峰 (Labuche Kang III)喜马拉雅中国"><td>102</td><td>拉布吉康 III 峰 (Labuche Kang III)</td><td><strong>7250</strong></td><td>喜马拉雅</td><td>中国</td></tr>
+<tr data-text="普塔丘利峰 (Putha Hiunchuli)喜马拉雅尼泊尔"><td>103</td><td>普塔丘利峰 (Putha Hiunchuli)</td><td><strong>7246</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="阿普萨拉萨斯岗日峰 (Apsarasas Kangri)喀喇昆仑中国 / 印度"><td>104</td><td>阿普萨拉萨斯岗日峰 (Apsarasas Kangri)</td><td><strong>7245</strong></td><td>喀喇昆仑</td><td>中国 / 印度</td></tr>
+<tr data-text="木库特帕尔巴特峰 (Mukut Parbat)喜马拉雅中国 / 印度"><td>105</td><td>木库特帕尔巴特峰 (Mukut Parbat)</td><td><strong>7242</strong></td><td>喜马拉雅</td><td>中国 / 印度</td></tr>
+<tr data-text="里莫 III 峰 (Rimo III)喀喇昆仑印度"><td>106</td><td>里莫 III 峰 (Rimo III)</td><td><strong>7233</strong></td><td>喀喇昆仑</td><td>印度</td></tr>
+<tr data-text="朗塘里让峰 (Langtang Lirung)喜马拉雅尼泊尔"><td>107</td><td>朗塘里让峰 (Langtang Lirung)</td><td><strong>7227</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="卡姜峰 (Karjiang)喜马拉雅中国"><td>108</td><td>卡姜峰 (Karjiang)</td><td><strong>7221</strong></td><td>喜马拉雅</td><td>中国</td></tr>
+<tr data-text="安纳布尔纳南峰 (Annapurna Dakshin)喜马拉雅尼泊尔"><td>109</td><td>安纳布尔纳南峰 (Annapurna Dakshin)</td><td><strong>7219</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+<tr data-text="卡塔普峰 (Khartaphu)喜马拉雅中国"><td>110</td><td>卡塔普峰 (Khartaphu)</td><td><strong>7213</strong></td><td>喜马拉雅</td><td>中国</td></tr>
+<tr data-text="同山加布峰 (Tongshanjiabu)喜马拉雅中国 / 不丹"><td>111</td><td>同山加布峰 (Tongshanjiabu)</td><td><strong>7207</strong></td><td>喜马拉雅</td><td>中国 / 不丹</td></tr>
+<tr data-text="马兰古蒂峰 (Malangutti Sar)喀喇昆仑巴基斯坦"><td>112</td><td>马兰古蒂峰 (Malangutti Sar)</td><td><strong>7207</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="宁金抗沙峰 (Noijin Kangsang)喜马拉雅中国"><td>113</td><td>宁金抗沙峰 (Noijin Kangsang)</td><td><strong>7206</strong></td><td>喜马拉雅</td><td>中国</td></tr>
+<tr data-text="朗塘日峰 (Langtang Ri)喜马拉雅中国 / 尼泊尔"><td>114</td><td>朗塘日峰 (Langtang Ri)</td><td><strong>7205</strong></td><td>喜马拉雅</td><td>中国 / 尼泊尔</td></tr>
+<tr data-text="康普康峰 (Kangphu Kang)喜马拉雅中国 / 不丹"><td>115</td><td>康普康峰 (Kangphu Kang)</td><td><strong>7204</strong></td><td>喜马拉雅</td><td>中国 / 不丹</td></tr>
+<tr data-text="辛格岗日峰 (Singhi Kangri)喀喇昆仑中国 / 印度"><td>116</td><td>辛格岗日峰 (Singhi Kangri)</td><td><strong>7202</strong></td><td>喀喇昆仑</td><td>中国 / 印度</td></tr>
+<tr data-text="卢普加尔峰 (Lupghar Sar)喀喇昆仑巴基斯坦"><td>118</td><td>卢普加尔峰 (Lupghar Sar)</td><td><strong>7200</strong></td><td>喀喇昆仑</td><td>巴基斯坦</td></tr>
+<tr data-text="查马尔峰 (Chamar)喜马拉雅尼泊尔"><td>117</td><td>查马尔峰 (Chamar)</td><td><strong>7187</strong></td><td>喜马拉雅</td><td>尼泊尔</td></tr>
+</tbody>
+</table>
+</div>
+
+<script>
+function pkFilter(){
+  var q=document.getElementById('pkSearch').value.trim().toLowerCase();
+  var rows=document.querySelectorAll('#pkTable tbody tr');
+  var n=0;
+  rows.forEach(function(tr){
+    var ok=!q||tr.getAttribute('data-text').toLowerCase().indexOf(q)>=0;
+    tr.style.display=ok?'':'none';
+    if(ok)n++;
+  });
+  document.getElementById('pkCount').textContent='显示 '+n+' 座';
+}
+pkFilter();
+</script>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 ForOutdoor · 内容仅供学习参考，户外有风险请量力而行 · 联系：hanlinnapoleon@gmail.com</p>
+  </div>
+</footer>
+</body>
+</html>
